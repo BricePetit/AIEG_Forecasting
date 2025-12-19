@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+AIEG_venv/
+AIEG_venv_linux/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Credentials / secrets
+credentials.json
+*.env
+*.secret
+
+# Top-level folders to ignore
+plots/
+presentation/
+
+# Models and saved models (source)
+src/models/
+src/saved_models/
+models/
+saved_models/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
