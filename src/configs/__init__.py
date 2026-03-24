@@ -1,8 +1,11 @@
 """
-Init file for data_generator module.
+Init file for configs module.
+
+This module contains functions to load and manage configuration files for the project.
 """
 
-__title__: str = "data_generator"
+
+__title__: str = "configs"
 __version__: str = "1.0.0"
 __author__: str = "Brice Petit"
 __license__: str = "MIT"
@@ -17,21 +20,8 @@ __license__: str = "MIT"
 
 # Imports from src
 
-from .pytorch_generators import (
-    PyTorchDataGenerator,
-)
-
-from .tf_generators import (
-    TFDataGeneratorInMem,
-
-)
-
-from .sklearn_generators import (
-    SkLearnDataGenerator,
-)
+from .config_loader import ConfigLoader
 
 __all__ = [
-    "PyTorchDataGenerator",
-    "TFDataGeneratorInMem",
-    "SkLearnDataGenerator",
+    "ConfigLoader"
 ]

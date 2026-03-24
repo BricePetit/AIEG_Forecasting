@@ -1,0 +1,1250 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773921523.105934  318843 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1773921523.133902  318843 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1773921523.727783  318843 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+====================  Starting training for production sites  ====================
+--------------------  Sites for site_id 1: ['aieg_CHAMAIEG_217158317/production', 'aieg_CHAMAIEG_217158406/production', 'aieg_CHAMAIEG_219792511/consumption', 'aieg_CHAMAIEG_219792511/production', 'aieg_CHAMAIEG_250692408/production']  --------------------
+Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]Creating temporal split: 100%|██████████| 1/1 [00:01<00:00,  1.17s/it]Creating temporal split: 100%|██████████| 1/1 [00:01<00:00,  1.17s/it]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]Initialization of the data and indices: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]Initialization of the data and indices: 100%|██████████| 1/1 [00:01<00:00,  1.40s/it]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]Initialization of the data and indices: 100%|██████████| 1/1 [00:01<00:00,  1.37s/it]
+[I 2026-03-19 12:59:12,209] A new study created in memory with name: no-name-4c998f41-0a94-4736-afb2-1eefb88ba4ca
+[I 2026-03-19 12:59:44,579] Trial 0 finished with value: 3927817353.912 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 87, 'cnn_channels_1': 220, 'cnn_channels_2': 92, 'kernel_size': 5, 'gru_hidden': 320, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.18102062309058575, 'pool_size': 4, 'lr': 0.0011289361414657617}. Best is trial 0 with value: 3927817353.912.
+Epoch 1/100, Train Loss: 10559186451.180819, Val Loss: 6905618091.912000, LR: 0.001129
+Epoch 5/100, Train Loss: 1012316667.700300, Val Loss: 13232945618.368000, LR: 0.001129
+Epoch 10/100, Train Loss: 888208087.528471, Val Loss: 18570221548.080002, LR: 0.000564
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 3927817353.912000
+[I 2026-03-19 13:00:32,781] Trial 1 finished with value: 4920732053.868 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 142, 'cnn_channels_1': 46, 'cnn_channels_2': 153, 'cnn_channels_3': 171, 'kernel_size': 3, 'gru_hidden': 175, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.2880894790926821, 'pool_size': 8, 'lr': 0.0034119938972915157}. Best is trial 0 with value: 3927817353.912.
+Epoch 1/100, Train Loss: 9730371009.214785, Val Loss: 7593066863.680000, LR: 0.003412
+Epoch 5/100, Train Loss: 1018260040.551449, Val Loss: 6965823106.048000, LR: 0.003412
+Epoch 10/100, Train Loss: 962499537.334665, Val Loss: 5545718785.520000, LR: 0.003412
+Epoch 15/100, Train Loss: 918334622.369630, Val Loss: 5710193830.808000, LR: 0.001706
+Early stopping triggered at epoch 18/100
+Best model saved with validation loss: 4920732053.868000
+[I 2026-03-19 13:01:11,780] Trial 2 finished with value: 3056843718.168 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 75, 'cnn_channels_1': 226, 'cnn_channels_2': 224, 'kernel_size': 3, 'gru_hidden': 210, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.32807805612041363, 'pool_size': 7, 'lr': 0.003416659616990729}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 8804080938.709291, Val Loss: 7474512060.180000, LR: 0.003417
+Epoch 5/100, Train Loss: 1025327678.041958, Val Loss: 4161450271.246000, LR: 0.003417
+Epoch 10/100, Train Loss: 968369318.769231, Val Loss: 4723734419.184000, LR: 0.003417
+Epoch 15/100, Train Loss: 924282572.467533, Val Loss: 7540937539.032000, LR: 0.001708
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 3056843718.168000
+[I 2026-03-19 13:02:54,959] Trial 3 finished with value: 4473910804.512 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 146, 'cnn_channels_1': 182, 'cnn_channels_2': 243, 'cnn_channels_3': 45, 'kernel_size': 5, 'gru_hidden': 291, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.22136387925246945, 'pool_size': 8, 'lr': 0.00011581146503677248}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13535574549.738262, Val Loss: 7603064857.060000, LR: 0.000116
+Epoch 5/100, Train Loss: 12651756362.933067, Val Loss: 7349734474.382000, LR: 0.000116
+Epoch 10/100, Train Loss: 9929180687.600399, Val Loss: 7448574120.860000, LR: 0.000116
+Epoch 15/100, Train Loss: 6862702312.407593, Val Loss: 5395357647.952000, LR: 0.000116
+Epoch 20/100, Train Loss: 4473896055.496504, Val Loss: 4495162167.936000, LR: 0.000116
+Epoch 25/100, Train Loss: 2755297146.981019, Val Loss: 6241127889.504000, LR: 0.000116
+Early stopping triggered at epoch 29/100
+Best model saved with validation loss: 4473910804.512000
+[I 2026-03-19 13:04:59,056] Trial 4 finished with value: 4993343174.016 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 121, 'cnn_channels_1': 196, 'cnn_channels_2': 230, 'kernel_size': 3, 'gru_hidden': 173, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.42176355628805595, 'pool_size': 8, 'lr': 0.00014986008871182196}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13540003105.758242, Val Loss: 7609545125.348000, LR: 0.000150
+Epoch 5/100, Train Loss: 12862395510.921080, Val Loss: 7627276330.904000, LR: 0.000150
+Epoch 10/100, Train Loss: 11341184345.766233, Val Loss: 7439911457.044000, LR: 0.000075
+Epoch 15/100, Train Loss: 10023792678.489510, Val Loss: 7021051830.544000, LR: 0.000075
+Epoch 20/100, Train Loss: 8653194616.071928, Val Loss: 6422141289.776000, LR: 0.000075
+Epoch 25/100, Train Loss: 7326383932.035964, Val Loss: 6111535638.768000, LR: 0.000075
+Epoch 30/100, Train Loss: 6142623308.915085, Val Loss: 5663565333.872000, LR: 0.000075
+Epoch 35/100, Train Loss: 5095290286.705295, Val Loss: 5381452169.360000, LR: 0.000075
+Epoch 40/100, Train Loss: 4193871102.017982, Val Loss: 5237925894.720000, LR: 0.000075
+Epoch 45/100, Train Loss: 3388067013.914086, Val Loss: 5172686489.840000, LR: 0.000075
+Early stopping triggered at epoch 49/100
+Best model saved with validation loss: 4993343174.016000
+[I 2026-03-19 13:05:55,551] Trial 5 finished with value: 4961094713.338 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 97, 'cnn_channels_1': 47, 'kernel_size': 5, 'gru_hidden': 126, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.497603255582188, 'pool_size': 7, 'lr': 0.0002885464849906532}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13528358924.019979, Val Loss: 7587129016.362000, LR: 0.000289
+Epoch 5/100, Train Loss: 12275582151.736263, Val Loss: 7109599948.852000, LR: 0.000289
+Epoch 10/100, Train Loss: 8753717495.688313, Val Loss: 6713304465.964500, LR: 0.000289
+Epoch 15/100, Train Loss: 5405336920.167832, Val Loss: 4961094713.338000, LR: 0.000289
+Epoch 20/100, Train Loss: 3248821612.819181, Val Loss: 5459474544.880000, LR: 0.000289
+Early stopping triggered at epoch 25/100
+Best model saved with validation loss: 4961094713.338000
+[I 2026-03-19 13:07:29,320] Trial 6 finished with value: 7488045655.04 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 238, 'cnn_channels_1': 164, 'kernel_size': 3, 'gru_hidden': 372, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.1154753192540594, 'pool_size': 7, 'lr': 0.004703099090479004}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 4836574771.100899, Val Loss: 7609664504.246000, LR: 0.004703
+Epoch 5/100, Train Loss: 991197802.725275, Val Loss: 7564909250.640000, LR: 0.004703
+Epoch 10/100, Train Loss: 995001521.726274, Val Loss: 7741585136.536000, LR: 0.004703
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 7488045655.040000
+[I 2026-03-19 13:08:08,785] Trial 7 finished with value: 7336585722.176 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 237, 'cnn_channels_1': 63, 'kernel_size': 3, 'gru_hidden': 122, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.29232780690120924, 'pool_size': 8, 'lr': 0.0008787461524126693}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13220286104.679321, Val Loss: 7480816524.536000, LR: 0.000879
+Epoch 5/100, Train Loss: 3823553275.780220, Val Loss: 7634981548.916000, LR: 0.000879
+Epoch 10/100, Train Loss: 1222488884.683317, Val Loss: 7635968062.936000, LR: 0.000439
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 7336585722.176000
+[I 2026-03-19 13:08:49,460] Trial 8 finished with value: 3574956927.176 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 142, 'cnn_channels_1': 108, 'cnn_channels_2': 224, 'cnn_channels_3': 177, 'kernel_size': 3, 'gru_hidden': 71, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.2294273887000697, 'pool_size': 5, 'lr': 0.003955746291640631}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 12462016071.864136, Val Loss: 6848483221.196000, LR: 0.003956
+Epoch 5/100, Train Loss: 1531890158.417583, Val Loss: 7599722955.116000, LR: 0.003956
+Epoch 10/100, Train Loss: 1045803823.904096, Val Loss: 6937251876.540000, LR: 0.003956
+Epoch 15/100, Train Loss: 971703675.612388, Val Loss: 9019739898.104000, LR: 0.001978
+Early stopping triggered at epoch 17/100
+Best model saved with validation loss: 3574956927.176000
+[I 2026-03-19 13:09:44,175] Trial 9 finished with value: 3786200906.778 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 53, 'cnn_channels_1': 41, 'kernel_size': 3, 'gru_hidden': 407, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.19635088097232806, 'pool_size': 7, 'lr': 0.00010567485900751817}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13518019181.202797, Val Loss: 7572521149.792000, LR: 0.000106
+Epoch 5/100, Train Loss: 12107231115.380619, Val Loss: 6742143073.288000, LR: 0.000106
+Epoch 10/100, Train Loss: 7942923953.102897, Val Loss: 4399392974.271000, LR: 0.000106
+Epoch 15/100, Train Loss: 4607035683.420579, Val Loss: 4287589525.642000, LR: 0.000106
+Epoch 20/100, Train Loss: 2519411145.014985, Val Loss: 4158322895.692000, LR: 0.000106
+Early stopping triggered at epoch 24/100
+Best model saved with validation loss: 3786200906.778000
+[I 2026-03-19 13:10:27,752] Trial 10 finished with value: 5746852445.528 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 48, 'cnn_channels_1': 252, 'cnn_channels_2': 153, 'kernel_size': 5, 'gru_hidden': 483, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.3784290921906316, 'pool_size': 2, 'lr': 0.008008019168294604}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 10318608009.846153, Val Loss: 6508127096.832000, LR: 0.008008
+Epoch 5/100, Train Loss: 1113725456.223776, Val Loss: 7590060833.038000, LR: 0.008008
+Epoch 10/100, Train Loss: 951712612.075924, Val Loss: 7629735832.920000, LR: 0.004004
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 5746852445.528000
+[I 2026-03-19 13:11:00,328] Trial 11 finished with value: 7466031675.2 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 189, 'cnn_channels_1': 115, 'cnn_channels_2': 203, 'cnn_channels_3': 255, 'kernel_size': 3, 'gru_hidden': 67, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.35170489308753294, 'pool_size': 5, 'lr': 0.002133200759988043}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13285100384.927073, Val Loss: 7466031675.200000, LR: 0.002133
+Epoch 5/100, Train Loss: 4651782076.099900, Val Loss: 7632418365.504000, LR: 0.002133
+Epoch 10/100, Train Loss: 1659475436.499501, Val Loss: 7631470827.056000, LR: 0.001067
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 7466031675.200000
+[I 2026-03-19 13:11:47,853] Trial 12 finished with value: 4156028174.322 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 183, 'cnn_channels_1': 116, 'cnn_channels_2': 204, 'kernel_size': 3, 'gru_hidden': 228, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.2502613295456061, 'pool_size': 5, 'lr': 0.009775253260208665}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 4164671546.245754, Val Loss: 7597214421.422000, LR: 0.009775
+Epoch 5/100, Train Loss: 1066508200.231768, Val Loss: 5695758450.946000, LR: 0.009775
+Epoch 10/100, Train Loss: 1080843557.626374, Val Loss: 5132085543.422000, LR: 0.009775
+Epoch 15/100, Train Loss: 996153502.209790, Val Loss: 6198660165.176000, LR: 0.004888
+Early stopping triggered at epoch 17/100
+Best model saved with validation loss: 4156028174.322000
+[I 2026-03-19 13:12:19,370] Trial 13 finished with value: 7210210617.264 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 76, 'cnn_channels_1': 126, 'cnn_channels_2': 33, 'cnn_channels_3': 156, 'kernel_size': 3, 'gru_hidden': 72, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.13900855721653893, 'pool_size': 3, 'lr': 0.0016979617996959826}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13322158912.191809, Val Loss: 7210210617.264000, LR: 0.001698
+Epoch 5/100, Train Loss: 5748397856.799201, Val Loss: 7614287770.020000, LR: 0.001698
+Epoch 10/100, Train Loss: 1861089881.014985, Val Loss: 7616637560.112000, LR: 0.000849
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 7210210617.264000
+[I 2026-03-19 13:12:45,517] Trial 14 finished with value: 3492513650.832 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 180, 'cnn_channels_1': 90, 'cnn_channels_2': 256, 'kernel_size': 3, 'gru_hidden': 233, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.3405678097903733, 'pool_size': 6, 'lr': 0.004280721296143757}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 6902861626.021978, Val Loss: 3492513650.832000, LR: 0.004281
+Epoch 5/100, Train Loss: 996321426.541458, Val Loss: 10121580583.264999, LR: 0.004281
+Epoch 10/100, Train Loss: 946143217.726274, Val Loss: 6867719725.294000, LR: 0.002140
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 3492513650.832000
+[I 2026-03-19 13:13:30,503] Trial 15 finished with value: 4189425898.648 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 198, 'cnn_channels_1': 84, 'cnn_channels_2': 256, 'kernel_size': 3, 'gru_hidden': 231, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.3521891877858852, 'pool_size': 6, 'lr': 0.000857881352676111}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13028909369.286713, Val Loss: 7532712683.804000, LR: 0.000858
+Epoch 5/100, Train Loss: 2477650253.650350, Val Loss: 4189425898.648000, LR: 0.000858
+Epoch 10/100, Train Loss: 1021625443.068931, Val Loss: 11540150693.120001, LR: 0.000858
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 4189425898.648000
+[I 2026-03-19 13:14:11,058] Trial 16 finished with value: 3120023661.772 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 171, 'cnn_channels_1': 151, 'cnn_channels_2': 183, 'kernel_size': 3, 'gru_hidden': 235, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.45609043373285596, 'pool_size': 6, 'lr': 0.0004895068927929438}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13360280639.168831, Val Loss: 7552969397.256000, LR: 0.000490
+Epoch 5/100, Train Loss: 6081346696.711288, Val Loss: 4195068241.586000, LR: 0.000490
+Epoch 10/100, Train Loss: 1760698430.897103, Val Loss: 4818393073.264000, LR: 0.000490
+Epoch 15/100, Train Loss: 1038809158.697303, Val Loss: 6868361280.656000, LR: 0.000245
+Early stopping triggered at epoch 17/100
+Best model saved with validation loss: 3120023661.772000
+[I 2026-03-19 13:14:59,013] Trial 17 finished with value: 3439610179.408 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 34, 'cnn_channels_1': 252, 'cnn_channels_2': 190, 'kernel_size': 3, 'gru_hidden': 335, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.4837209886320904, 'pool_size': 6, 'lr': 0.00034999015120045504}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13350206904.903097, Val Loss: 7619422000.872000, LR: 0.000350
+Epoch 5/100, Train Loss: 6348866544.655345, Val Loss: 3676065698.616000, LR: 0.000350
+Epoch 10/100, Train Loss: 2010172781.522478, Val Loss: 8328039009.600000, LR: 0.000350
+Epoch 15/100, Train Loss: 1097524362.229770, Val Loss: 20264194175.919998, LR: 0.000175
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 3439610179.408000
+[I 2026-03-19 13:16:10,482] Trial 18 finished with value: 6543364028.86 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 113, 'cnn_channels_1': 154, 'kernel_size': 5, 'gru_hidden': 268, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.44019960348657267, 'pool_size': 4, 'lr': 0.0004546792783213983}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13132521703.704296, Val Loss: 6991925421.992000, LR: 0.000455
+Epoch 5/100, Train Loss: 3442354151.896104, Val Loss: 7503799732.632000, LR: 0.000455
+Epoch 10/100, Train Loss: 1128958299.508492, Val Loss: 6873893794.126000, LR: 0.000455
+Epoch 15/100, Train Loss: 965790380.707293, Val Loss: 7616955245.436000, LR: 0.000227
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 6543364028.860000
+[I 2026-03-19 13:16:59,619] Trial 19 finished with value: 3887938110.036 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 215, 'cnn_channels_1': 219, 'cnn_channels_2': 178, 'kernel_size': 3, 'gru_hidden': 160, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.4165661364119378, 'pool_size': 7, 'lr': 0.0005510862707703516}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13436904730.341658, Val Loss: 7617286567.928000, LR: 0.000551
+Epoch 5/100, Train Loss: 8160925413.786214, Val Loss: 5675705521.508000, LR: 0.000551
+Epoch 10/100, Train Loss: 2756182648.103896, Val Loss: 3887938110.036000, LR: 0.000551
+Epoch 15/100, Train Loss: 1238024759.432567, Val Loss: 4426961317.908000, LR: 0.000551
+Early stopping triggered at epoch 20/100
+Best model saved with validation loss: 3887938110.036000
+[I 2026-03-19 13:17:42,763] Trial 20 finished with value: 7608449415.208 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 162, 'cnn_channels_1': 219, 'cnn_channels_2': 120, 'kernel_size': 3, 'gru_hidden': 431, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.4503317386241935, 'pool_size': 6, 'lr': 0.0018593587635487875}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 8922772840.919081, Val Loss: 7613619337.366000, LR: 0.001859
+Epoch 5/100, Train Loss: 1042328683.940060, Val Loss: 7627729985.242000, LR: 0.001859
+Epoch 10/100, Train Loss: 968103594.693307, Val Loss: 7661329955.080000, LR: 0.001859
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 7608449415.208000
+[I 2026-03-19 13:18:45,253] Trial 21 finished with value: 3605347155.344 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 33, 'cnn_channels_1': 256, 'cnn_channels_2': 186, 'kernel_size': 3, 'gru_hidden': 335, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.49709352988575634, 'pool_size': 6, 'lr': 0.0002456818186501233}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13447603242.709291, Val Loss: 7446427379.996000, LR: 0.000246
+Epoch 5/100, Train Loss: 8889707723.316683, Val Loss: 5571525206.328000, LR: 0.000246
+Epoch 10/100, Train Loss: 3671435351.560440, Val Loss: 3814680978.422000, LR: 0.000246
+Epoch 15/100, Train Loss: 1578530780.515485, Val Loss: 6159087184.776000, LR: 0.000246
+Epoch 20/100, Train Loss: 1045841101.458542, Val Loss: 12072327222.872000, LR: 0.000123
+Early stopping triggered at epoch 21/100
+Best model saved with validation loss: 3605347155.344000
+[I 2026-03-19 13:19:43,822] Trial 22 finished with value: 4210180326.92 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 66, 'cnn_channels_1': 236, 'cnn_channels_2': 173, 'kernel_size': 3, 'gru_hidden': 267, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.4666679246203795, 'pool_size': 6, 'lr': 0.00043088373709706065}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13372993773.586414, Val Loss: 7304223124.560000, LR: 0.000431
+Epoch 5/100, Train Loss: 6661901516.723277, Val Loss: 5081294949.244000, LR: 0.000431
+Epoch 10/100, Train Loss: 2044450524.179820, Val Loss: 5420735254.518000, LR: 0.000431
+Epoch 15/100, Train Loss: 1125254529.550450, Val Loss: 5564384137.300000, LR: 0.000215
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 4210180326.920000
+[I 2026-03-19 13:20:35,013] Trial 23 finished with value: 3151408163.876 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 35, 'cnn_channels_1': 202, 'cnn_channels_2': 208, 'kernel_size': 3, 'gru_hidden': 331, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.38925205950903796, 'pool_size': 7, 'lr': 0.00024404989647975806}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13453957302.089911, Val Loss: 7493351016.704000, LR: 0.000244
+Epoch 5/100, Train Loss: 8944276603.908092, Val Loss: 5243033655.637000, LR: 0.000244
+Epoch 10/100, Train Loss: 3753476720.559441, Val Loss: 3482315101.252000, LR: 0.000244
+Epoch 15/100, Train Loss: 1557005913.286713, Val Loss: 3979357477.648000, LR: 0.000244
+Epoch 20/100, Train Loss: 1016578060.835165, Val Loss: 4936141801.040000, LR: 0.000122
+Early stopping triggered at epoch 21/100
+Best model saved with validation loss: 3151408163.876000
+[I 2026-03-19 13:21:46,202] Trial 24 finished with value: 3667128190.696 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 110, 'cnn_channels_1': 191, 'cnn_channels_2': 215, 'kernel_size': 3, 'gru_hidden': 217, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.3983336174319112, 'pool_size': 7, 'lr': 0.00017677894599435324}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13523640510.017982, Val Loss: 7581455598.508000, LR: 0.000177
+Epoch 5/100, Train Loss: 12034505698.077923, Val Loss: 7130980984.068000, LR: 0.000177
+Epoch 10/100, Train Loss: 8193953731.260739, Val Loss: 6670046149.648000, LR: 0.000177
+Epoch 15/100, Train Loss: 4973661136.751248, Val Loss: 4568483361.369000, LR: 0.000177
+Epoch 20/100, Train Loss: 2826175460.987013, Val Loss: 3845850064.600000, LR: 0.000177
+Epoch 25/100, Train Loss: 1609330587.812188, Val Loss: 4128200284.784000, LR: 0.000177
+Early stopping triggered at epoch 29/100
+Best model saved with validation loss: 3667128190.696000
+[I 2026-03-19 13:22:23,167] Trial 25 finished with value: 3599403797.348 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 59, 'cnn_channels_1': 167, 'cnn_channels_2': 122, 'kernel_size': 3, 'gru_hidden': 300, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.32546541981496524, 'pool_size': 7, 'lr': 0.0007243273750196138}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 12884124715.476524, Val Loss: 6785145716.928000, LR: 0.000724
+Epoch 5/100, Train Loss: 2521893190.329670, Val Loss: 3599403797.348000, LR: 0.000724
+Epoch 10/100, Train Loss: 987619196.075924, Val Loss: 7767246252.096000, LR: 0.000724
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 3599403797.348000
+[I 2026-03-19 13:23:07,204] Trial 26 finished with value: 6766953754.562 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 88, 'cnn_channels_1': 140, 'kernel_size': 5, 'gru_hidden': 371, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.39393166175042554, 'pool_size': 5, 'lr': 0.00020871191563345687}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13375446803.436563, Val Loss: 7424000122.960000, LR: 0.000209
+Epoch 5/100, Train Loss: 6622607385.318682, Val Loss: 6898293530.160000, LR: 0.000209
+Epoch 10/100, Train Loss: 2020500356.107892, Val Loss: 7618341861.542000, LR: 0.000209
+Epoch 15/100, Train Loss: 1097230703.624376, Val Loss: 7632855594.544000, LR: 0.000104
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 6766953754.562000
+[I 2026-03-19 13:23:41,873] Trial 27 finished with value: 3486438414.624 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 162, 'cnn_channels_1': 203, 'cnn_channels_2': 227, 'cnn_channels_3': 32, 'kernel_size': 3, 'gru_hidden': 270, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.3147967256407565, 'pool_size': 4, 'lr': 0.000562010602607848}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 13225006695.192806, Val Loss: 7334552423.480000, LR: 0.000562
+Epoch 5/100, Train Loss: 3982293253.370629, Val Loss: 3486438414.624000, LR: 0.000562
+Epoch 10/100, Train Loss: 1207767888.351648, Val Loss: 13210283566.184000, LR: 0.000562
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 3486438414.624000
+[I 2026-03-19 13:24:16,301] Trial 28 finished with value: 3669217777.568 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 217, 'cnn_channels_1': 175, 'cnn_channels_2': 165, 'kernel_size': 3, 'gru_hidden': 197, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.37732907300819873, 'pool_size': 7, 'lr': 0.0012662100409875268}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 12768053035.220779, Val Loss: 6866663727.732000, LR: 0.001266
+Epoch 5/100, Train Loss: 1723624014.081918, Val Loss: 5836973745.664000, LR: 0.001266
+Epoch 10/100, Train Loss: 987809013.210789, Val Loss: 4967693913.168000, LR: 0.001266
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 3669217777.568000
+[I 2026-03-19 13:25:37,528] Trial 29 finished with value: 4225187433.728 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 76, 'cnn_channels_1': 209, 'cnn_channels_2': 202, 'kernel_size': 5, 'gru_hidden': 320, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.4315515890359359, 'pool_size': 8, 'lr': 0.0010998504836989618}. Best is trial 2 with value: 3056843718.168.
+Epoch 1/100, Train Loss: 10735728112.975025, Val Loss: 7616726331.504000, LR: 0.001100
+Epoch 5/100, Train Loss: 1064429821.202797, Val Loss: 7145179093.337000, LR: 0.001100
+Epoch 10/100, Train Loss: 950568391.288711, Val Loss: 4448397027.248000, LR: 0.001100
+Epoch 15/100, Train Loss: 924052246.857143, Val Loss: 4777096838.936000, LR: 0.001100
+Epoch 20/100, Train Loss: 872668870.185814, Val Loss: 6636112118.816000, LR: 0.000550
+Early stopping triggered at epoch 23/100
+Best model saved with validation loss: 4225187433.728000
+Epoch 1/100, Train Loss: 9063353073.102898, Val Loss: 6629866949.028000, LR: 0.003417
+Epoch 5/100, Train Loss: 1039722248.911089, Val Loss: 7308776483.480000, LR: 0.003417
+Epoch 10/100, Train Loss: 979946110.753247, Val Loss: 4198340912.180000, LR: 0.003417
+Epoch 15/100, Train Loss: 957209456.863137, Val Loss: 3873671383.864000, LR: 0.003417
+Epoch 20/100, Train Loss: 952734154.277722, Val Loss: 6267505443.576000, LR: 0.003417
+Early stopping triggered at epoch 24/100
+Best model saved with validation loss: 3403452331.632000
+
+--- Metrics for all houses ---
+
+Metrics:
+MAE sklearn (lower is better):  28147.97265625
+Normalized MAE (lower is better):  0.22316578
+MAPE sklearn (lower is better):  1.989639090156339e+16 %
+MSE (lower is better):  2624882688.0
+RMSE (lower is better):  51233.60896911324
+NRMSE (lower is better):  0.4061958
+R2 (higher is better):  0.9017975330352783
+
+
+--- Metrics for house id 1 ---
+
+Metrics:
+MAE sklearn (lower is better):  28147.97265625
+Normalized MAE (lower is better):  0.22316578
+MAPE sklearn (lower is better):  1.989639090156339e+16 %
+MSE (lower is better):  2624882688.0
+RMSE (lower is better):  51233.60896911324
+NRMSE (lower is better):  0.4061958
+R2 (higher is better):  0.9017975330352783
+
+--------------------  Sites for site_id 2: ['aieg_CHAAIEG2_250692408/consumption']  --------------------
+Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]Creating temporal split: 100%|██████████| 1/1 [00:00<00:00,  1.14it/s]Creating temporal split: 100%|██████████| 1/1 [00:00<00:00,  1.14it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.12it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.12it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.03it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.12it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.12it/s]
+[I 2026-03-19 13:27:03,239] A new study created in memory with name: no-name-d1cf2ed5-45a1-42d9-a9fa-4324b800505b
+[I 2026-03-19 13:28:17,216] Trial 0 finished with value: 28853781.060927972 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 81, 'cnn_channels_1': 132, 'cnn_channels_2': 226, 'cnn_channels_3': 167, 'kernel_size': 3, 'gru_hidden': 332, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.4573969978014114, 'pool_size': 6, 'lr': 0.0014253511212705028}. Best is trial 0 with value: 28853781.060927972.
+Epoch 1/100, Train Loss: 444534369.923664, Val Loss: 204435713.634146, LR: 0.001425
+Epoch 5/100, Train Loss: 48319930.998473, Val Loss: 31842299.286871, LR: 0.001425
+Epoch 10/100, Train Loss: 45221740.819847, Val Loss: 38262117.285061, LR: 0.001425
+Epoch 15/100, Train Loss: 42521264.818321, Val Loss: 55979632.345751, LR: 0.000713
+Early stopping triggered at epoch 18/100
+Best model saved with validation loss: 28853781.060928
+[I 2026-03-19 13:29:15,675] Trial 1 finished with value: 35512512.955125764 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 80, 'cnn_channels_1': 203, 'kernel_size': 3, 'gru_hidden': 115, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.33348265579368236, 'pool_size': 6, 'lr': 0.0011998562120413398}. Best is trial 0 with value: 28853781.060927972.
+Epoch 1/100, Train Loss: 595722627.029008, Val Loss: 511173184.469131, LR: 0.001200
+Epoch 5/100, Train Loss: 60484843.363359, Val Loss: 48886722.583651, LR: 0.001200
+Epoch 10/100, Train Loss: 45705620.132824, Val Loss: 46535891.473514, LR: 0.001200
+Epoch 15/100, Train Loss: 41365967.951145, Val Loss: 66859729.228944, LR: 0.000600
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 35512512.955126
+[I 2026-03-19 13:31:20,365] Trial 2 finished with value: 44842116.995331556 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 111, 'cnn_channels_1': 212, 'cnn_channels_2': 102, 'kernel_size': 3, 'gru_hidden': 179, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.2810416811630504, 'pool_size': 5, 'lr': 0.00020478626134675274}. Best is trial 0 with value: 28853781.060927972.
+Epoch 1/100, Train Loss: 637883927.401527, Val Loss: 619902461.422971, LR: 0.000205
+Epoch 5/100, Train Loss: 438130957.349618, Val Loss: 420435732.757717, LR: 0.000205
+Epoch 10/100, Train Loss: 154985268.302290, Val Loss: 169088628.341511, LR: 0.000205
+Epoch 15/100, Train Loss: 64117756.053435, Val Loss: 72610085.338129, LR: 0.000205
+Epoch 20/100, Train Loss: 43464436.092366, Val Loss: 50841431.841749, LR: 0.000205
+Epoch 25/100, Train Loss: 39007232.094656, Val Loss: 48819511.534394, LR: 0.000205
+Epoch 30/100, Train Loss: 38507692.117557, Val Loss: 66254429.024486, LR: 0.000205
+Epoch 35/100, Train Loss: 36692846.628817, Val Loss: 62199308.578220, LR: 0.000102
+Early stopping triggered at epoch 37/100
+Best model saved with validation loss: 44842116.995332
+[I 2026-03-19 13:32:10,635] Trial 3 finished with value: 63185368.99966654 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 105, 'cnn_channels_1': 142, 'kernel_size': 5, 'gru_hidden': 302, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.3645171619811789, 'pool_size': 5, 'lr': 0.00011653518269576327}. Best is trial 0 with value: 28853781.060927972.
+Epoch 1/100, Train Loss: 640002931.200000, Val Loss: 625454380.655488, LR: 0.000117
+Epoch 5/100, Train Loss: 538367711.169466, Val Loss: 522271791.761338, LR: 0.000117
+Epoch 10/100, Train Loss: 297297350.027481, Val Loss: 308161411.513672, LR: 0.000117
+Epoch 15/100, Train Loss: 143811595.019847, Val Loss: 168368867.186738, LR: 0.000117
+Epoch 20/100, Train Loss: 72448888.045802, Val Loss: 93490194.306593, LR: 0.000117
+Epoch 25/100, Train Loss: 46031383.415267, Val Loss: 80401403.486280, LR: 0.000117
+Epoch 30/100, Train Loss: 40094290.169466, Val Loss: 94937195.716606, LR: 0.000117
+Epoch 35/100, Train Loss: 38180132.163359, Val Loss: 79507835.494712, LR: 0.000058
+Early stopping triggered at epoch 37/100
+Best model saved with validation loss: 63185368.999667
+[I 2026-03-19 13:33:22,686] Trial 4 finished with value: 26991824.801067073 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 138, 'cnn_channels_1': 200, 'kernel_size': 3, 'gru_hidden': 442, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.3997745948019754, 'pool_size': 7, 'lr': 0.002270432616688779}. Best is trial 4 with value: 26991824.801067073.
+Epoch 1/100, Train Loss: 482851062.277863, Val Loss: 501431988.292683, LR: 0.002270
+Epoch 5/100, Train Loss: 46945930.433588, Val Loss: 26991824.801067, LR: 0.002270
+Epoch 10/100, Train Loss: 41620433.775573, Val Loss: 35705855.011433, LR: 0.002270
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 26991824.801067
+[I 2026-03-19 13:33:43,768] Trial 5 finished with value: 33724474.754573174 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 156, 'cnn_channels_1': 129, 'cnn_channels_2': 179, 'kernel_size': 5, 'gru_hidden': 375, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.23159127056469592, 'pool_size': 5, 'lr': 0.0037738736641332806}. Best is trial 4 with value: 26991824.801067073.
+Epoch 1/100, Train Loss: 210877476.699237, Val Loss: 38628749.824314, LR: 0.003774
+Epoch 5/100, Train Loss: 40866017.386260, Val Loss: 52001058.219512, LR: 0.003774
+Epoch 10/100, Train Loss: 39397631.135115, Val Loss: 54583651.549543, LR: 0.003774
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 33724474.754573
+[I 2026-03-19 13:34:08,483] Trial 6 finished with value: 40436010.17463796 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 244, 'cnn_channels_1': 252, 'kernel_size': 3, 'gru_hidden': 398, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.14942477169359433, 'pool_size': 3, 'lr': 0.0007586345731004485}. Best is trial 4 with value: 26991824.801067073.
+Epoch 1/100, Train Loss: 525988083.688550, Val Loss: 360248493.795255, LR: 0.000759
+Epoch 5/100, Train Loss: 43177064.833588, Val Loss: 49910431.047161, LR: 0.000759
+Epoch 10/100, Train Loss: 38765242.361832, Val Loss: 40436010.174638, LR: 0.000759
+Epoch 15/100, Train Loss: 37543702.143511, Val Loss: 55761955.973561, LR: 0.000759
+Early stopping triggered at epoch 20/100
+Best model saved with validation loss: 40436010.174638
+[I 2026-03-19 13:34:37,021] Trial 7 finished with value: 24536111.713224087 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 78, 'cnn_channels_1': 79, 'cnn_channels_2': 157, 'kernel_size': 3, 'gru_hidden': 245, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.15853206927302313, 'pool_size': 7, 'lr': 0.008310149509411748}. Best is trial 7 with value: 24536111.713224087.
+Epoch 1/100, Train Loss: 125630498.593893, Val Loss: 28594637.778868, LR: 0.008310
+Epoch 5/100, Train Loss: 41585938.225954, Val Loss: 31933942.278773, LR: 0.008310
+Epoch 10/100, Train Loss: 38298014.186260, Val Loss: 26144595.990758, LR: 0.004155
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 24536111.713224
+[I 2026-03-19 13:35:04,545] Trial 8 finished with value: 39490012.20083842 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 206, 'cnn_channels_1': 78, 'cnn_channels_2': 89, 'cnn_channels_3': 46, 'kernel_size': 3, 'gru_hidden': 92, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.19890231300772676, 'pool_size': 3, 'lr': 0.001268982120303045}. Best is trial 7 with value: 24536111.713224087.
+Epoch 1/100, Train Loss: 619921781.618321, Val Loss: 574765580.413396, LR: 0.001269
+Epoch 5/100, Train Loss: 103881385.838168, Val Loss: 101423708.785918, LR: 0.001269
+Epoch 10/100, Train Loss: 42612855.395420, Val Loss: 52288774.969893, LR: 0.001269
+Epoch 15/100, Train Loss: 40478019.060305, Val Loss: 45214498.366997, LR: 0.001269
+Early stopping triggered at epoch 19/100
+Best model saved with validation loss: 39490012.200838
+[I 2026-03-19 13:37:09,514] Trial 9 finished with value: 60724771.73461319 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 217, 'cnn_channels_1': 141, 'cnn_channels_2': 220, 'cnn_channels_3': 124, 'kernel_size': 3, 'gru_hidden': 142, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.3284436307691945, 'pool_size': 6, 'lr': 0.0001163456351691661}. Best is trial 7 with value: 24536111.713224087.
+Epoch 1/100, Train Loss: 641077131.505344, Val Loss: 628170920.603277, LR: 0.000116
+Epoch 5/100, Train Loss: 589503874.222901, Val Loss: 575360638.706912, LR: 0.000116
+Epoch 10/100, Train Loss: 433488837.154198, Val Loss: 432701798.460366, LR: 0.000116
+Epoch 15/100, Train Loss: 261633874.961832, Val Loss: 279483409.495332, LR: 0.000116
+Epoch 20/100, Train Loss: 147143668.238168, Val Loss: 169879860.465511, LR: 0.000116
+Epoch 25/100, Train Loss: 84375480.261069, Val Loss: 102562659.952268, LR: 0.000116
+Epoch 30/100, Train Loss: 53966015.610687, Val Loss: 76048895.310785, LR: 0.000116
+Epoch 35/100, Train Loss: 42696540.206107, Val Loss: 71674636.269722, LR: 0.000116
+Epoch 40/100, Train Loss: 39138048.972519, Val Loss: 82405570.886195, LR: 0.000058
+Early stopping triggered at epoch 42/100
+Best model saved with validation loss: 60724771.734613
+[I 2026-03-19 13:37:58,467] Trial 10 finished with value: 30479352.57993521 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 35, 'cnn_channels_1': 38, 'cnn_channels_2': 147, 'kernel_size': 5, 'gru_hidden': 231, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.15252975784132952, 'pool_size': 8, 'lr': 0.008822988242858806}. Best is trial 7 with value: 24536111.713224087.
+Epoch 1/100, Train Loss: 136957535.899237, Val Loss: 46591951.714177, LR: 0.008823
+Epoch 5/100, Train Loss: 43993618.829008, Val Loss: 38154297.893388, LR: 0.008823
+Epoch 10/100, Train Loss: 42107999.003053, Val Loss: 43071388.868236, LR: 0.008823
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 30479352.579935
+[I 2026-03-19 13:38:39,862] Trial 11 finished with value: 27111843.81821646 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 159, 'cnn_channels_1': 76, 'kernel_size': 3, 'gru_hidden': 508, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.4353777427111002, 'pool_size': 8, 'lr': 0.008989401776982809}. Best is trial 7 with value: 24536111.713224087.
+Epoch 1/100, Train Loss: 94574064.509924, Val Loss: 27111843.818216, LR: 0.008989
+Epoch 5/100, Train Loss: 46623248.302290, Val Loss: 29243806.309070, LR: 0.008989
+Epoch 10/100, Train Loss: 41763636.364885, Val Loss: 36544393.570312, LR: 0.004495
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 27111843.818216
+[I 2026-03-19 13:40:43,121] Trial 12 finished with value: 20002481.051733993 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 34, 'cnn_channels_1': 196, 'cnn_channels_2': 33, 'kernel_size': 3, 'gru_hidden': 489, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.1051560287046664, 'pool_size': 7, 'lr': 0.003668228883789485}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 144545428.131298, Val Loss: 48458677.294207, LR: 0.003668
+Epoch 5/100, Train Loss: 41413312.734351, Val Loss: 32266017.503430, LR: 0.003668
+Epoch 10/100, Train Loss: 40625081.820611, Val Loss: 28286511.145579, LR: 0.003668
+Epoch 15/100, Train Loss: 39746202.044275, Val Loss: 46356623.287538, LR: 0.003668
+Epoch 20/100, Train Loss: 39591325.000763, Val Loss: 36332308.212795, LR: 0.003668
+Epoch 25/100, Train Loss: 39109388.699237, Val Loss: 20002481.051734, LR: 0.003668
+Epoch 30/100, Train Loss: 38799669.845802, Val Loss: 28043875.737948, LR: 0.003668
+Early stopping triggered at epoch 35/100
+Best model saved with validation loss: 20002481.051734
+[I 2026-03-19 13:41:27,997] Trial 13 finished with value: 27195898.66711128 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 36, 'cnn_channels_1': 176, 'cnn_channels_2': 42, 'kernel_size': 3, 'gru_hidden': 243, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.10042384895832389, 'pool_size': 7, 'lr': 0.003933298376713962}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 208515853.551145, Val Loss: 33425826.686166, LR: 0.003933
+Epoch 5/100, Train Loss: 41444897.690076, Val Loss: 40929776.299352, LR: 0.003933
+Epoch 10/100, Train Loss: 40176376.505344, Val Loss: 41722183.567407, LR: 0.003933
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 27195898.667111
+[I 2026-03-19 13:41:54,428] Trial 14 finished with value: 22924647.8828125 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 63, 'cnn_channels_1': 97, 'cnn_channels_2': 44, 'kernel_size': 5, 'gru_hidden': 240, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.11994316460566451, 'pool_size': 7, 'lr': 0.00475428577672139}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 174345035.056489, Val Loss: 33874496.858994, LR: 0.004754
+Epoch 5/100, Train Loss: 40495329.693893, Val Loss: 50960877.004287, LR: 0.004754
+Epoch 10/100, Train Loss: 37178260.390840, Val Loss: 39495490.255669, LR: 0.002377
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 22924647.882812
+[I 2026-03-19 13:42:49,963] Trial 15 finished with value: 33039069.67397104 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 56, 'cnn_channels_1': 103, 'cnn_channels_2': 38, 'kernel_size': 5, 'gru_hidden': 452, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.10081877945031308, 'pool_size': 8, 'lr': 0.0005012281021733973}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 530004885.325191, Val Loss: 372070073.371618, LR: 0.000501
+Epoch 5/100, Train Loss: 44226468.960305, Val Loss: 33039069.673971, LR: 0.000501
+Epoch 10/100, Train Loss: 38433406.684733, Val Loss: 53085159.691549, LR: 0.000501
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 33039069.673971
+[I 2026-03-19 13:43:18,636] Trial 16 finished with value: 36633804.34036776 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 53, 'cnn_channels_1': 168, 'cnn_channels_2': 81, 'kernel_size': 5, 'gru_hidden': 511, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.25581539211776383, 'pool_size': 2, 'lr': 0.004062333573724854}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 117968183.218321, Val Loss: 40584088.203506, LR: 0.004062
+Epoch 5/100, Train Loss: 41295851.125191, Val Loss: 51451692.230135, LR: 0.004062
+Epoch 10/100, Train Loss: 37628767.091603, Val Loss: 48343173.719131, LR: 0.002031
+Epoch 15/100, Train Loss: 36774837.042748, Val Loss: 68211849.658537, LR: 0.002031
+Early stopping triggered at epoch 19/100
+Best model saved with validation loss: 36633804.340368
+[I 2026-03-19 13:44:05,093] Trial 17 finished with value: 26847759.73385099 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 117, 'cnn_channels_1': 254, 'cnn_channels_2': 54, 'cnn_channels_3': 250, 'kernel_size': 5, 'gru_hidden': 195, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.18681093416441708, 'pool_size': 7, 'lr': 0.002713464582034663}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 314340762.027481, Val Loss: 79813275.322885, LR: 0.002713
+Epoch 5/100, Train Loss: 42093301.353435, Val Loss: 30796365.897008, LR: 0.002713
+Epoch 10/100, Train Loss: 40498204.954198, Val Loss: 42389546.204078, LR: 0.002713
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 26847759.733851
+[I 2026-03-19 13:44:32,625] Trial 18 finished with value: 43543986.75023819 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 61, 'cnn_channels_1': 40, 'cnn_channels_2': 116, 'cnn_channels_3': 33, 'kernel_size': 5, 'gru_hidden': 338, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.22000379157257435, 'pool_size': 4, 'lr': 0.0005093712860672712}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 598172509.899237, Val Loss: 524796064.948123, LR: 0.000509
+Epoch 5/100, Train Loss: 70920704.003053, Val Loss: 65271195.626524, LR: 0.000509
+Epoch 10/100, Train Loss: 40539789.623664, Val Loss: 46551036.825553, LR: 0.000509
+Epoch 15/100, Train Loss: 37578095.851908, Val Loss: 63023788.201982, LR: 0.000255
+Early stopping triggered at epoch 18/100
+Best model saved with validation loss: 43543986.750238
+[I 2026-03-19 13:45:17,032] Trial 19 finished with value: 27593047.110137194 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 183, 'cnn_channels_1': 109, 'cnn_channels_2': 68, 'kernel_size': 5, 'gru_hidden': 296, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.13347955045339074, 'pool_size': 6, 'lr': 0.00581891444385637}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 141993328.290076, Val Loss: 32049099.698742, LR: 0.005819
+Epoch 5/100, Train Loss: 42680135.653435, Val Loss: 27593047.110137, LR: 0.005819
+Epoch 10/100, Train Loss: 41595831.419847, Val Loss: 33601365.824457, LR: 0.005819
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 27593047.110137
+[I 2026-03-19 13:46:05,641] Trial 20 finished with value: 31028015.418349847 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 93, 'cnn_channels_1': 177, 'cnn_channels_2': 32, 'kernel_size': 5, 'gru_hidden': 439, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.494758735631501, 'pool_size': 8, 'lr': 0.002142115643939852}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 222233882.303817, Val Loss: 34191921.458270, LR: 0.002142
+Epoch 5/100, Train Loss: 45235939.496183, Val Loss: 39646800.413872, LR: 0.002142
+Epoch 10/100, Train Loss: 40523799.740458, Val Loss: 57476397.561261, LR: 0.001071
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 31028015.418350
+[I 2026-03-19 13:46:45,153] Trial 21 finished with value: 22739962.65558308 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 72, 'cnn_channels_1': 78, 'cnn_channels_2': 155, 'kernel_size': 3, 'gru_hidden': 260, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.17073231399197136, 'pool_size': 7, 'lr': 0.005072394568904725}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 163635301.633588, Val Loss: 29408297.817168, LR: 0.005072
+Epoch 5/100, Train Loss: 40782784.499237, Val Loss: 29234582.197170, LR: 0.005072
+Epoch 10/100, Train Loss: 38963435.630534, Val Loss: 25884354.505764, LR: 0.005072
+Epoch 15/100, Train Loss: 36873728.733206, Val Loss: 27970348.235328, LR: 0.002536
+Early stopping triggered at epoch 18/100
+Best model saved with validation loss: 22739962.655583
+[I 2026-03-19 13:47:11,355] Trial 22 finished with value: 26420308.488614712 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 34, 'cnn_channels_1': 61, 'cnn_channels_2': 189, 'kernel_size': 3, 'gru_hidden': 263, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.1212455161021407, 'pool_size': 7, 'lr': 0.005424955339341539}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 166207206.961832, Val Loss: 28364079.960223, LR: 0.005425
+Epoch 5/100, Train Loss: 41172619.070992, Val Loss: 27574550.967130, LR: 0.005425
+Epoch 10/100, Train Loss: 37348484.058015, Val Loss: 40352378.306974, LR: 0.002712
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 26420308.488615
+[I 2026-03-19 13:47:35,920] Trial 23 finished with value: 24174881.88043064 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 63, 'cnn_channels_1': 100, 'cnn_channels_2': 123, 'kernel_size': 3, 'gru_hidden': 199, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.18825804535277624, 'pool_size': 6, 'lr': 0.005637032166772824}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 182199305.338931, Val Loss: 44790264.119760, LR: 0.005637
+Epoch 5/100, Train Loss: 42080836.926718, Val Loss: 27260543.400486, LR: 0.005637
+Epoch 10/100, Train Loss: 38331769.971756, Val Loss: 47788342.114329, LR: 0.002819
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 24174881.880431
+[I 2026-03-19 13:48:15,193] Trial 24 finished with value: 24634345.822980184 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 130, 'cnn_channels_1': 116, 'cnn_channels_2': 256, 'kernel_size': 3, 'gru_hidden': 151, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.16253212593959315, 'pool_size': 7, 'lr': 0.0028803020182480658}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 349280520.476336, Val Loss: 99635519.341130, LR: 0.002880
+Epoch 5/100, Train Loss: 40829693.615267, Val Loss: 30470531.927687, LR: 0.002880
+Epoch 10/100, Train Loss: 39443687.806107, Val Loss: 38200658.182069, LR: 0.002880
+Epoch 15/100, Train Loss: 37278752.957252, Val Loss: 32924219.418636, LR: 0.001440
+Early stopping triggered at epoch 18/100
+Best model saved with validation loss: 24634345.822980
+[I 2026-03-19 13:48:41,179] Trial 25 finished with value: 23386068.280630715 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 49, 'cnn_channels_1': 224, 'cnn_channels_2': 66, 'kernel_size': 3, 'gru_hidden': 340, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.10247647132130333, 'pool_size': 8, 'lr': 0.006086915975163792}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 114153412.795420, Val Loss: 23386068.280631, LR: 0.006087
+Epoch 5/100, Train Loss: 40262955.926718, Val Loss: 42232985.046351, LR: 0.006087
+Epoch 10/100, Train Loss: 36832598.948855, Val Loss: 34894574.403963, LR: 0.003043
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 23386068.280631
+[I 2026-03-19 13:49:04,048] Trial 26 finished with value: 28301415.283393674 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 71, 'cnn_channels_1': 165, 'cnn_channels_2': 174, 'cnn_channels_3': 251, 'kernel_size': 5, 'gru_hidden': 283, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.25381372945822156, 'pool_size': 5, 'lr': 0.0018323305488435416}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 418312459.792366, Val Loss: 181153977.582603, LR: 0.001832
+Epoch 5/100, Train Loss: 42496891.226718, Val Loss: 64027947.791063, LR: 0.001832
+Epoch 10/100, Train Loss: 39968973.477863, Val Loss: 54440773.806688, LR: 0.001832
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 28301415.283394
+[I 2026-03-19 13:49:51,678] Trial 27 finished with value: 39823667.52200838 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 96, 'cnn_channels_1': 94, 'kernel_size': 3, 'gru_hidden': 219, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.1734649069180729, 'pool_size': 4, 'lr': 0.0007860509982612221}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 570233611.346565, Val Loss: 458788487.302687, LR: 0.000786
+Epoch 5/100, Train Loss: 51447415.309924, Val Loss: 45059136.264672, LR: 0.000786
+Epoch 10/100, Train Loss: 40530169.781298, Val Loss: 59087824.797256, LR: 0.000786
+Epoch 15/100, Train Loss: 38512168.552672, Val Loss: 61242904.095084, LR: 0.000786
+Epoch 20/100, Train Loss: 36519756.266412, Val Loss: 76659077.129478, LR: 0.000393
+Early stopping triggered at epoch 21/100
+Best model saved with validation loss: 39823667.522008
+[I 2026-03-19 13:50:41,811] Trial 28 finished with value: 30073580.824123476 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 91, 'cnn_channels_1': 69, 'cnn_channels_2': 135, 'kernel_size': 5, 'gru_hidden': 370, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.13405624878720826, 'pool_size': 7, 'lr': 0.003820136671695737}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 166464102.000000, Val Loss: 35195955.514339, LR: 0.003820
+Epoch 5/100, Train Loss: 42313957.680153, Val Loss: 30073580.824123, LR: 0.003820
+Epoch 10/100, Train Loss: 39887312.314504, Val Loss: 38627536.841463, LR: 0.003820
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 30073580.824123
+[I 2026-03-19 13:52:57,101] Trial 29 finished with value: 20211180.09698933 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 47, 'cnn_channels_1': 58, 'cnn_channels_2': 57, 'cnn_channels_3': 156, 'kernel_size': 3, 'gru_hidden': 306, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.21252622920381975, 'pool_size': 6, 'lr': 0.0016622078562850565}. Best is trial 12 with value: 20002481.051733993.
+Epoch 1/100, Train Loss: 434314771.883969, Val Loss: 184398849.210366, LR: 0.001662
+Epoch 5/100, Train Loss: 44211384.746565, Val Loss: 29364150.405583, LR: 0.001662
+Epoch 10/100, Train Loss: 42030790.218321, Val Loss: 24778039.384432, LR: 0.001662
+Epoch 15/100, Train Loss: 41212271.680153, Val Loss: 23157141.959556, LR: 0.001662
+Epoch 20/100, Train Loss: 40108983.127481, Val Loss: 28733418.000667, LR: 0.001662
+Epoch 25/100, Train Loss: 39787510.829008, Val Loss: 28454424.181355, LR: 0.001662
+Epoch 30/100, Train Loss: 38624096.022901, Val Loss: 21229129.451410, LR: 0.001662
+Early stopping triggered at epoch 34/100
+Best model saved with validation loss: 20211180.096989
+Epoch 1/100, Train Loss: 144644560.746565, Val Loss: 27818345.380097, LR: 0.003668
+Epoch 5/100, Train Loss: 40667282.292366, Val Loss: 33580231.676782, LR: 0.003668
+Epoch 10/100, Train Loss: 39678004.002290, Val Loss: 38595862.266006, LR: 0.003668
+Epoch 15/100, Train Loss: 37270591.252672, Val Loss: 41175675.613138, LR: 0.001834
+Early stopping triggered at epoch 17/100
+Best model saved with validation loss: 26606727.851372
+
+--- Metrics for all houses ---
+
+Metrics:
+MAE sklearn (lower is better):  3669.852783203125
+Normalized MAE (lower is better):  0.16687408
+MAPE sklearn (lower is better):  1.0888356275683328e+17 %
+MSE (lower is better):  52131916.0
+RMSE (lower is better):  7220.243486199063
+NRMSE (lower is better):  0.32831603
+R2 (higher is better):  0.9299011826515198
+
+
+--- Metrics for house id 2 ---
+
+Metrics:
+MAE sklearn (lower is better):  3669.852783203125
+Normalized MAE (lower is better):  0.16687408
+MAPE sklearn (lower is better):  1.0888356275683328e+17 %
+MSE (lower is better):  52131916.0
+RMSE (lower is better):  7220.243486199063
+NRMSE (lower is better):  0.32831603
+R2 (higher is better):  0.9299011826515198
+
+--------------------  Sites for site_id 3: ['aieg_SPORAIEG_217158317/consumption']  --------------------
+Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]Creating temporal split: 100%|██████████| 1/1 [00:00<00:00,  1.93it/s]Creating temporal split: 100%|██████████| 1/1 [00:00<00:00,  1.93it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.87it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.87it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.43it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.43it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.87it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.87it/s]
+[I 2026-03-19 13:54:22,450] A new study created in memory with name: no-name-c5c46e52-6239-4931-9961-aa08cbdbe4a0
+[I 2026-03-19 13:54:44,128] Trial 0 finished with value: 148033031.73728815 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 32, 'cnn_channels_1': 161, 'cnn_channels_2': 211, 'kernel_size': 3, 'gru_hidden': 343, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.4928943104643132, 'pool_size': 8, 'lr': 0.0011451681317524692}. Best is trial 0 with value: 148033031.73728815.
+Epoch 1/100, Train Loss: 498322674.297872, Val Loss: 616465918.745763, LR: 0.001145
+Epoch 5/100, Train Loss: 47057640.842553, Val Loss: 228141250.872881, LR: 0.001145
+Epoch 10/100, Train Loss: 34641358.957447, Val Loss: 725904397.084746, LR: 0.000573
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 148033031.737288
+[I 2026-03-19 13:55:26,469] Trial 1 finished with value: 345927959.59322035 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 119, 'cnn_channels_1': 48, 'kernel_size': 3, 'gru_hidden': 205, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.18396076847613144, 'pool_size': 4, 'lr': 0.00015654019087371943}. Best is trial 0 with value: 148033031.73728815.
+Epoch 1/100, Train Loss: 573574039.421277, Val Loss: 927938989.288136, LR: 0.000157
+Epoch 5/100, Train Loss: 496334107.268085, Val Loss: 788656461.406780, LR: 0.000157
+Epoch 10/100, Train Loss: 301336406.127660, Val Loss: 501718659.186441, LR: 0.000157
+Epoch 15/100, Train Loss: 159843957.829787, Val Loss: 358596443.525424, LR: 0.000157
+Epoch 20/100, Train Loss: 85807183.459574, Val Loss: 373106804.881356, LR: 0.000157
+Epoch 25/100, Train Loss: 55061858.143617, Val Loss: 505753570.711864, LR: 0.000078
+Early stopping triggered at epoch 26/100
+Best model saved with validation loss: 345927959.593220
+[I 2026-03-19 13:57:47,473] Trial 2 finished with value: 438099245.4237288 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 47, 'cnn_channels_1': 37, 'cnn_channels_2': 177, 'kernel_size': 5, 'gru_hidden': 74, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.1035217515965806, 'pool_size': 7, 'lr': 0.00010547652424261752}. Best is trial 0 with value: 148033031.73728815.
+Epoch 1/100, Train Loss: 575733309.889362, Val Loss: 936283679.118644, LR: 0.000105
+Epoch 5/100, Train Loss: 573249610.314894, Val Loss: 931017683.050847, LR: 0.000105
+Epoch 10/100, Train Loss: 564141529.310638, Val Loss: 916421054.406780, LR: 0.000105
+Epoch 15/100, Train Loss: 548991072.510638, Val Loss: 892317047.050847, LR: 0.000105
+Epoch 20/100, Train Loss: 528125369.089362, Val Loss: 860125273.796610, LR: 0.000105
+Epoch 25/100, Train Loss: 502654836.153192, Val Loss: 820577135.135593, LR: 0.000105
+Epoch 30/100, Train Loss: 473704717.259574, Val Loss: 775953302.355932, LR: 0.000105
+Epoch 35/100, Train Loss: 441980643.761702, Val Loss: 727599217.491525, LR: 0.000105
+Epoch 40/100, Train Loss: 409122653.582979, Val Loss: 680051172.677966, LR: 0.000105
+Epoch 45/100, Train Loss: 375268887.097872, Val Loss: 633750885.830508, LR: 0.000105
+Epoch 50/100, Train Loss: 342818284.527660, Val Loss: 589245748.135593, LR: 0.000105
+Epoch 55/100, Train Loss: 310736763.429787, Val Loss: 548795545.152542, LR: 0.000105
+Epoch 60/100, Train Loss: 281055610.817021, Val Loss: 515572283.932203, LR: 0.000105
+Epoch 65/100, Train Loss: 253260287.319149, Val Loss: 487433388.338983, LR: 0.000105
+Epoch 70/100, Train Loss: 226157606.646809, Val Loss: 463698337.898305, LR: 0.000105
+Epoch 75/100, Train Loss: 199976879.714894, Val Loss: 445747084.203390, LR: 0.000105
+Epoch 80/100, Train Loss: 176668276.668085, Val Loss: 440224521.355932, LR: 0.000105
+Epoch 85/100, Train Loss: 154238340.053191, Val Loss: 443890050.169492, LR: 0.000105
+Epoch 90/100, Train Loss: 132823334.748936, Val Loss: 452245164.203390, LR: 0.000105
+Early stopping triggered at epoch 94/100
+Best model saved with validation loss: 438099245.423729
+[I 2026-03-19 13:58:01,336] Trial 3 finished with value: 204842254.84745762 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 125, 'cnn_channels_1': 248, 'cnn_channels_2': 199, 'kernel_size': 3, 'gru_hidden': 284, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.41551606620629056, 'pool_size': 2, 'lr': 0.001196315266194021}. Best is trial 0 with value: 148033031.73728815.
+Epoch 1/100, Train Loss: 510452200.102128, Val Loss: 644571183.601695, LR: 0.001196
+Epoch 5/100, Train Loss: 44884480.748936, Val Loss: 482230116.525424, LR: 0.001196
+Epoch 10/100, Train Loss: 33922847.664894, Val Loss: 610312729.805085, LR: 0.000598
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 204842254.847458
+[I 2026-03-19 13:59:25,231] Trial 4 finished with value: 156051843.8644068 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 86, 'cnn_channels_1': 132, 'kernel_size': 3, 'gru_hidden': 355, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.31468401874093055, 'pool_size': 8, 'lr': 0.00010267006504016029}. Best is trial 0 with value: 148033031.73728815.
+Epoch 1/100, Train Loss: 572470424.289362, Val Loss: 925363248.542373, LR: 0.000103
+Epoch 5/100, Train Loss: 477340450.961702, Val Loss: 753379744.932203, LR: 0.000103
+Epoch 10/100, Train Loss: 264184077.536170, Val Loss: 429497718.915254, LR: 0.000103
+Epoch 15/100, Train Loss: 128529681.287234, Val Loss: 246878610.813559, LR: 0.000103
+Epoch 20/100, Train Loss: 65517919.636170, Val Loss: 202358756.237288, LR: 0.000103
+Epoch 25/100, Train Loss: 41525697.727660, Val Loss: 208045418.237288, LR: 0.000103
+Epoch 30/100, Train Loss: 32398529.519149, Val Loss: 189333323.796610, LR: 0.000051
+Early stopping triggered at epoch 33/100
+Best model saved with validation loss: 156051843.864407
+[I 2026-03-19 13:59:38,051] Trial 5 finished with value: 385511818.9830508 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 60, 'cnn_channels_1': 72, 'kernel_size': 5, 'gru_hidden': 508, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.17914456779799687, 'pool_size': 2, 'lr': 0.00031921283185378776}. Best is trial 0 with value: 148033031.73728815.
+Epoch 1/100, Train Loss: 557552718.808511, Val Loss: 860184393.118644, LR: 0.000319
+Epoch 5/100, Train Loss: 164898772.617021, Val Loss: 385511818.983051, LR: 0.000319
+Epoch 10/100, Train Loss: 45161902.793617, Val Loss: 576482036.610170, LR: 0.000319
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 385511818.983051
+[I 2026-03-19 14:00:44,837] Trial 6 finished with value: 109427902.20338982 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 180, 'cnn_channels_1': 136, 'kernel_size': 3, 'gru_hidden': 225, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.4801904018596439, 'pool_size': 8, 'lr': 0.00014578260396591017}. Best is trial 6 with value: 109427902.20338982.
+Epoch 1/100, Train Loss: 574531925.140426, Val Loss: 931887785.830508, LR: 0.000146
+Epoch 5/100, Train Loss: 531394300.408511, Val Loss: 853574033.610170, LR: 0.000146
+Epoch 10/100, Train Loss: 402733583.472340, Val Loss: 650830736.169492, LR: 0.000146
+Epoch 15/100, Train Loss: 265157284.548936, Val Loss: 460547601.898305, LR: 0.000146
+Epoch 20/100, Train Loss: 162615399.617021, Val Loss: 359170926.915254, LR: 0.000146
+Epoch 25/100, Train Loss: 99064456.272340, Val Loss: 336344625.627119, LR: 0.000146
+Epoch 30/100, Train Loss: 63789676.914894, Val Loss: 290691846.915254, LR: 0.000146
+Epoch 35/100, Train Loss: 46041126.734043, Val Loss: 243516096.000000, LR: 0.000146
+Epoch 40/100, Train Loss: 37232338.792553, Val Loss: 243978561.898305, LR: 0.000146
+Epoch 45/100, Train Loss: 34487682.241489, Val Loss: 128698821.627119, LR: 0.000146
+Epoch 50/100, Train Loss: 33599411.911702, Val Loss: 121721515.966102, LR: 0.000146
+Epoch 55/100, Train Loss: 33309857.979787, Val Loss: 239247260.915254, LR: 0.000146
+Early stopping triggered at epoch 59/100
+Best model saved with validation loss: 109427902.203390
+[I 2026-03-19 14:01:06,811] Trial 7 finished with value: 81824140.81355932 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 139, 'cnn_channels_1': 165, 'cnn_channels_2': 50, 'cnn_channels_3': 87, 'kernel_size': 5, 'gru_hidden': 104, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.10015744478574079, 'pool_size': 6, 'lr': 0.002190916133812918}. Best is trial 7 with value: 81824140.81355932.
+Epoch 1/100, Train Loss: 511132689.021277, Val Loss: 662429257.983051, LR: 0.002191
+Epoch 5/100, Train Loss: 38584178.088298, Val Loss: 106958606.050847, LR: 0.002191
+Epoch 10/100, Train Loss: 31654140.092553, Val Loss: 269186221.144068, LR: 0.002191
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 81824140.813559
+[I 2026-03-19 14:01:52,853] Trial 8 finished with value: 64777399.084745765 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 216, 'cnn_channels_1': 143, 'cnn_channels_2': 69, 'kernel_size': 3, 'gru_hidden': 487, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.47814146612302355, 'pool_size': 5, 'lr': 0.00016508578463903816}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 570565207.608511, Val Loss: 915711274.305085, LR: 0.000165
+Epoch 5/100, Train Loss: 384010410.187234, Val Loss: 593265054.372881, LR: 0.000165
+Epoch 10/100, Train Loss: 133955266.257447, Val Loss: 297935264.203390, LR: 0.000165
+Epoch 15/100, Train Loss: 55335631.814894, Val Loss: 235501711.593220, LR: 0.000165
+Epoch 20/100, Train Loss: 36474215.244681, Val Loss: 199148605.338983, LR: 0.000165
+Epoch 25/100, Train Loss: 32701964.595745, Val Loss: 76878481.288136, LR: 0.000165
+Epoch 30/100, Train Loss: 30600470.285106, Val Loss: 184091503.470339, LR: 0.000083
+Early stopping triggered at epoch 33/100
+Best model saved with validation loss: 64777399.084746
+[I 2026-03-19 14:02:16,056] Trial 9 finished with value: 140309796.3983051 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 192, 'cnn_channels_1': 187, 'cnn_channels_2': 64, 'cnn_channels_3': 207, 'kernel_size': 5, 'gru_hidden': 488, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.44251008308046924, 'pool_size': 4, 'lr': 0.0013206469078761059}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 329436227.970213, Val Loss: 140309796.398305, LR: 0.001321
+Epoch 5/100, Train Loss: 36177076.826596, Val Loss: 482215436.322034, LR: 0.001321
+Epoch 10/100, Train Loss: 32401151.912766, Val Loss: 382478533.423729, LR: 0.000660
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 140309796.398305
+[I 2026-03-19 14:02:35,940] Trial 10 finished with value: 628449173.559322 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 256, 'cnn_channels_1': 103, 'cnn_channels_2': 117, 'cnn_channels_3': 249, 'kernel_size': 3, 'gru_hidden': 438, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.36487259558711616, 'pool_size': 5, 'lr': 0.007533711935321526}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 445641713.821277, Val Loss: 628449173.559322, LR: 0.007534
+Epoch 5/100, Train Loss: 434868326.417021, Val Loss: 643149696.542373, LR: 0.007534
+Epoch 10/100, Train Loss: 434351317.072340, Val Loss: 655389757.830508, LR: 0.003767
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 628449173.559322
+[I 2026-03-19 14:03:09,984] Trial 11 finished with value: 93343468.90254237 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 232, 'cnn_channels_1': 208, 'cnn_channels_2': 33, 'cnn_channels_3': 49, 'kernel_size': 5, 'gru_hidden': 145, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.24811233615381426, 'pool_size': 6, 'lr': 0.003731794843945761}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 469602143.012766, Val Loss: 639947445.830508, LR: 0.003732
+Epoch 5/100, Train Loss: 43276131.054255, Val Loss: 316836369.881356, LR: 0.003732
+Epoch 10/100, Train Loss: 34311037.255319, Val Loss: 734502984.355932, LR: 0.001866
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 93343468.902542
+[I 2026-03-19 14:03:54,506] Trial 12 finished with value: 206391838.94915253 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 173, 'cnn_channels_1': 178, 'cnn_channels_2': 99, 'cnn_channels_3': 77, 'kernel_size': 5, 'gru_hidden': 65, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.2866827767966114, 'pool_size': 6, 'lr': 0.0005052189208895731}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 573363893.719149, Val Loss: 929018643.288136, LR: 0.000505
+Epoch 5/100, Train Loss: 496482550.621277, Val Loss: 789546295.067797, LR: 0.000505
+Epoch 10/100, Train Loss: 301459556.382979, Val Loss: 483221404.203390, LR: 0.000505
+Epoch 15/100, Train Loss: 144188680.208511, Val Loss: 270880521.457627, LR: 0.000505
+Epoch 20/100, Train Loss: 71134149.497872, Val Loss: 234515935.220339, LR: 0.000505
+Epoch 25/100, Train Loss: 44845609.995745, Val Loss: 303561391.186441, LR: 0.000505
+Early stopping triggered at epoch 29/100
+Best model saved with validation loss: 206391838.949153
+[I 2026-03-19 14:04:11,565] Trial 13 finished with value: 212563609.97457626 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 213, 'cnn_channels_1': 102, 'cnn_channels_2': 73, 'kernel_size': 5, 'gru_hidden': 425, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.1061438265679443, 'pool_size': 5, 'lr': 0.0030602974278619716}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 177607395.000000, Val Loss: 294866545.953390, LR: 0.003060
+Epoch 5/100, Train Loss: 32749727.305319, Val Loss: 480218819.593220, LR: 0.003060
+Epoch 10/100, Train Loss: 29634338.025532, Val Loss: 639244872.084746, LR: 0.001530
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 212563609.974576
+[I 2026-03-19 14:04:49,438] Trial 14 finished with value: 308748528.13559324 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 152, 'cnn_channels_1': 206, 'cnn_channels_2': 35, 'kernel_size': 3, 'gru_hidden': 140, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.3476758453359568, 'pool_size': 4, 'lr': 0.000445361836268885}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 572977320.885106, Val Loss: 924743051.559322, LR: 0.000445
+Epoch 5/100, Train Loss: 446788463.046808, Val Loss: 700173499.067797, LR: 0.000445
+Epoch 10/100, Train Loss: 209703242.970213, Val Loss: 386381285.220339, LR: 0.000445
+Epoch 15/100, Train Loss: 92272823.838298, Val Loss: 317396976.813559, LR: 0.000445
+Epoch 20/100, Train Loss: 50934965.904255, Val Loss: 402064330.983051, LR: 0.000445
+Epoch 25/100, Train Loss: 38255443.193617, Val Loss: 384467061.152542, LR: 0.000223
+Early stopping triggered at epoch 26/100
+Best model saved with validation loss: 308748528.135593
+[I 2026-03-19 14:05:06,955] Trial 15 finished with value: 117743168.37288135 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 101, 'cnn_channels_1': 115, 'cnn_channels_2': 143, 'cnn_channels_3': 132, 'kernel_size': 5, 'gru_hidden': 293, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.1989129129766024, 'pool_size': 6, 'lr': 0.002569060199249483}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 292026098.089362, Val Loss: 117743168.372881, LR: 0.002569
+Epoch 5/100, Train Loss: 33296144.196809, Val Loss: 590161232.262712, LR: 0.002569
+Epoch 10/100, Train Loss: 31001342.168085, Val Loss: 702128915.305085, LR: 0.001285
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 117743168.372881
+[I 2026-03-19 14:05:20,489] Trial 16 finished with value: 513214788.5508475 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 150, 'cnn_channels_1': 158, 'cnn_channels_2': 247, 'kernel_size': 5, 'gru_hidden': 378, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.39368998402905536, 'pool_size': 3, 'lr': 0.008080833262903262}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 115437770.593617, Val Loss: 513214788.550847, LR: 0.008081
+Epoch 5/100, Train Loss: 38583738.402660, Val Loss: 688637506.711864, LR: 0.008081
+Epoch 10/100, Train Loss: 32648172.374468, Val Loss: 606137212.305085, LR: 0.004040
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 513214788.550847
+[I 2026-03-19 14:05:53,289] Trial 17 finished with value: 215841883.48305085 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 217, 'cnn_channels_1': 244, 'cnn_channels_2': 88, 'kernel_size': 3, 'gru_hidden': 234, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.24684799114123054, 'pool_size': 7, 'lr': 0.0006664432870681861}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 559852113.668085, Val Loss: 868182740.338983, LR: 0.000666
+Epoch 5/100, Train Loss: 157547778.246808, Val Loss: 308854704.330508, LR: 0.000666
+Epoch 10/100, Train Loss: 40502460.297872, Val Loss: 448811273.525424, LR: 0.000666
+Epoch 15/100, Train Loss: 32340867.243085, Val Loss: 640809357.694915, LR: 0.000333
+Early stopping triggered at epoch 17/100
+Best model saved with validation loss: 215841883.483051
+[I 2026-03-19 14:06:33,928] Trial 18 finished with value: 260470452.94915253 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 166, 'cnn_channels_1': 86, 'cnn_channels_2': 129, 'cnn_channels_3': 119, 'kernel_size': 3, 'gru_hidden': 156, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.15045536893567932, 'pool_size': 5, 'lr': 0.0002368390685512474}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 573026839.795745, Val Loss: 924610966.372881, LR: 0.000237
+Epoch 5/100, Train Loss: 460241065.889362, Val Loss: 722976317.305085, LR: 0.000237
+Epoch 10/100, Train Loss: 226573883.429787, Val Loss: 394438335.050847, LR: 0.000237
+Epoch 15/100, Train Loss: 98605677.357447, Val Loss: 289961140.338983, LR: 0.000237
+Epoch 20/100, Train Loss: 49626258.538298, Val Loss: 296488764.542373, LR: 0.000237
+Epoch 25/100, Train Loss: 32738835.346809, Val Loss: 304594761.457627, LR: 0.000118
+Early stopping triggered at epoch 28/100
+Best model saved with validation loss: 260470452.949153
+[I 2026-03-19 14:06:53,656] Trial 19 finished with value: 553515201.1525424 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 130, 'cnn_channels_1': 218, 'cnn_channels_2': 59, 'cnn_channels_3': 32, 'kernel_size': 5, 'gru_hidden': 296, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.24345192900622803, 'pool_size': 7, 'lr': 0.001541298294837686}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 489382926.212766, Val Loss: 956553588.203390, LR: 0.001541
+Epoch 5/100, Train Loss: 40371445.215957, Val Loss: 879003682.440678, LR: 0.001541
+Epoch 10/100, Train Loss: 34858124.244681, Val Loss: 853024042.101695, LR: 0.000771
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 553515201.152542
+[I 2026-03-19 14:07:14,371] Trial 20 finished with value: 491989744.30508476 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 255, 'cnn_channels_1': 153, 'cnn_channels_2': 109, 'kernel_size': 5, 'gru_hidden': 411, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.44645642743612035, 'pool_size': 3, 'lr': 0.005109250995136044}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 278013384.880851, Val Loss: 747385779.694915, LR: 0.005109
+Epoch 5/100, Train Loss: 37292487.673404, Val Loss: 720651212.440678, LR: 0.005109
+Epoch 10/100, Train Loss: 34229426.875532, Val Loss: 819360290.372881, LR: 0.002555
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 491989744.305085
+[I 2026-03-19 14:07:48,104] Trial 21 finished with value: 138731421.81779662 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 223, 'cnn_channels_1': 210, 'cnn_channels_2': 34, 'cnn_channels_3': 53, 'kernel_size': 5, 'gru_hidden': 122, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.24816989981078552, 'pool_size': 6, 'lr': 0.002589556372294878}. Best is trial 8 with value: 64777399.084745765.
+Epoch 1/100, Train Loss: 493522735.353191, Val Loss: 583959149.542373, LR: 0.002590
+Epoch 5/100, Train Loss: 50918328.057447, Val Loss: 220310630.618644, LR: 0.002590
+Epoch 10/100, Train Loss: 36770286.617021, Val Loss: 786641435.805085, LR: 0.001295
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 138731421.817797
+[I 2026-03-19 14:08:39,075] Trial 22 finished with value: 50760332.41949152 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 236, 'cnn_channels_1': 184, 'cnn_channels_2': 54, 'cnn_channels_3': 93, 'kernel_size': 5, 'gru_hidden': 171, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.3066407856485789, 'pool_size': 6, 'lr': 0.0043095190833700395}. Best is trial 22 with value: 50760332.41949152.
+Epoch 1/100, Train Loss: 462214369.429787, Val Loss: 653542869.694915, LR: 0.004310
+Epoch 5/100, Train Loss: 45110888.553191, Val Loss: 58073600.220339, LR: 0.004310
+Epoch 10/100, Train Loss: 37399388.530851, Val Loss: 79239449.449153, LR: 0.004310
+Epoch 15/100, Train Loss: 34781653.472340, Val Loss: 54451652.665254, LR: 0.002155
+Early stopping triggered at epoch 18/100
+Best model saved with validation loss: 50760332.419492
+[I 2026-03-19 14:09:14,892] Trial 23 finished with value: 59670381.55932204 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 200, 'cnn_channels_1': 189, 'cnn_channels_2': 59, 'cnn_channels_3': 98, 'kernel_size': 5, 'gru_hidden': 187, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.30701800540840113, 'pool_size': 5, 'lr': 0.001827162986248249}. Best is trial 22 with value: 50760332.41949152.
+Epoch 1/100, Train Loss: 495237981.208511, Val Loss: 648198833.355932, LR: 0.001827
+Epoch 5/100, Train Loss: 41714174.774468, Val Loss: 74002486.076271, LR: 0.001827
+Epoch 10/100, Train Loss: 37274866.089362, Val Loss: 581763314.338983, LR: 0.001827
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 59670381.559322
+[I 2026-03-19 14:09:50,420] Trial 24 finished with value: 383108852.3135593 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 197, 'cnn_channels_1': 188, 'cnn_channels_2': 72, 'cnn_channels_3': 159, 'kernel_size': 5, 'gru_hidden': 200, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.31916862673336194, 'pool_size': 5, 'lr': 0.0048378329168156774}. Best is trial 22 with value: 50760332.41949152.
+Epoch 1/100, Train Loss: 456716956.765957, Val Loss: 648198833.355932, LR: 0.004838
+Epoch 5/100, Train Loss: 45203966.574468, Val Loss: 610798327.550847, LR: 0.004838
+Epoch 10/100, Train Loss: 36891992.843617, Val Loss: 897681406.576271, LR: 0.004838
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 383108852.313559
+[I 2026-03-19 14:10:28,479] Trial 25 finished with value: 75771377.30508475 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 238, 'cnn_channels_1': 225, 'cnn_channels_2': 89, 'kernel_size': 5, 'gru_hidden': 255, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.2833701867714673, 'pool_size': 5, 'lr': 0.0007194603597377344}. Best is trial 22 with value: 50760332.41949152.
+Epoch 1/100, Train Loss: 535081796.561702, Val Loss: 762696850.474576, LR: 0.000719
+Epoch 5/100, Train Loss: 51134814.953191, Val Loss: 75771377.305085, LR: 0.000719
+Epoch 10/100, Train Loss: 34468193.500000, Val Loss: 612301217.686441, LR: 0.000719
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 75771377.305085
+[I 2026-03-19 14:10:53,824] Trial 26 finished with value: 503399905.9322034 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 192, 'cnn_channels_1': 182, 'cnn_channels_2': 166, 'cnn_channels_3': 100, 'kernel_size': 3, 'gru_hidden': 195, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.35675393053994914, 'pool_size': 4, 'lr': 0.0017242788733666718}. Best is trial 22 with value: 50760332.41949152.
+Epoch 1/100, Train Loss: 521989393.770213, Val Loss: 704311518.915254, LR: 0.001724
+Epoch 5/100, Train Loss: 430015345.565957, Val Loss: 587430396.474576, LR: 0.001724
+Epoch 10/100, Train Loss: 41530556.165957, Val Loss: 804525207.864407, LR: 0.001724
+Epoch 15/100, Train Loss: 35849503.951064, Val Loss: 994305714.271186, LR: 0.000862
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 503399905.932203
+[I 2026-03-19 14:11:39,933] Trial 27 finished with value: 61670361.6779661 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 205, 'cnn_channels_1': 139, 'cnn_channels_2': 82, 'kernel_size': 5, 'gru_hidden': 171, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.38262114559458726, 'pool_size': 7, 'lr': 0.0048231861453783215}. Best is trial 22 with value: 50760332.41949152.
+Epoch 1/100, Train Loss: 459952938.961702, Val Loss: 651728765.830508, LR: 0.004823
+Epoch 5/100, Train Loss: 43509180.561702, Val Loss: 61670361.677966, LR: 0.004823
+Epoch 10/100, Train Loss: 36927501.017021, Val Loss: 598892640.262712, LR: 0.004823
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 61670361.677966
+[I 2026-03-19 14:12:17,785] Trial 28 finished with value: 70241376.09745763 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 199, 'cnn_channels_1': 120, 'cnn_channels_2': 53, 'cnn_channels_3': 166, 'kernel_size': 5, 'gru_hidden': 187, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.3851412967448321, 'pool_size': 7, 'lr': 0.0053218547902008214}. Best is trial 22 with value: 50760332.41949152.
+Epoch 1/100, Train Loss: 455514608.510638, Val Loss: 571939439.423729, LR: 0.005322
+Epoch 5/100, Train Loss: 42413910.959574, Val Loss: 680567620.406780, LR: 0.005322
+Epoch 10/100, Train Loss: 36230490.085106, Val Loss: 906110210.372881, LR: 0.002661
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 70241376.097458
+[I 2026-03-19 14:13:08,829] Trial 29 finished with value: 58052786.016949154 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 240, 'cnn_channels_1': 168, 'kernel_size': 5, 'gru_hidden': 176, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.3250049708629122, 'pool_size': 8, 'lr': 0.009357626053880144}. Best is trial 22 with value: 50760332.41949152.
+Epoch 1/100, Train Loss: 446591501.259574, Val Loss: 641532185.084746, LR: 0.009358
+Epoch 5/100, Train Loss: 46421568.838298, Val Loss: 103169056.440678, LR: 0.009358
+Epoch 10/100, Train Loss: 38915660.373404, Val Loss: 70448607.457627, LR: 0.009358
+Epoch 15/100, Train Loss: 36003683.528723, Val Loss: 94897024.440678, LR: 0.004679
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 58052786.016949
+Epoch 1/100, Train Loss: 463563964.680851, Val Loss: 641532185.084746, LR: 0.004310
+Epoch 5/100, Train Loss: 43019890.136170, Val Loss: 645603360.347458, LR: 0.004310
+Epoch 10/100, Train Loss: 35491526.786170, Val Loss: 716711161.949153, LR: 0.002155
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 494748347.940678
+
+--- Metrics for all houses ---
+
+Metrics:
+MAE sklearn (lower is better):  2606.561767578125
+Normalized MAE (lower is better):  0.19153167
+MAPE sklearn (lower is better):  6.851164155055964e+17 %
+MSE (lower is better):  28991954.0
+RMSE (lower is better):  5384.417702964732
+NRMSE (lower is better):  0.39565012
+R2 (higher is better):  0.9500476121902466
+
+
+--- Metrics for house id 3 ---
+
+Metrics:
+MAE sklearn (lower is better):  2606.561767578125
+Normalized MAE (lower is better):  0.19153167
+MAPE sklearn (lower is better):  6.851164155055964e+17 %
+MSE (lower is better):  28991954.0
+RMSE (lower is better):  5384.417702964732
+NRMSE (lower is better):  0.39565012
+R2 (higher is better):  0.9500476121902466
+
+--------------------  Sites for site_id 4: ['aieg_AIEGINPV_250692460/consumption']  --------------------
+Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]Creating temporal split: 100%|██████████| 1/1 [00:00<00:00,  1.60it/s]Creating temporal split: 100%|██████████| 1/1 [00:00<00:00,  1.60it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.57it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.57it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.15it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.31it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  1.31it/s]
+[I 2026-03-19 14:14:11,502] A new study created in memory with name: no-name-ca13d760-fee6-41d6-9d74-5a0139138162
+[I 2026-03-19 14:14:44,671] Trial 0 finished with value: 20488743.82045201 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 133, 'cnn_channels_1': 86, 'kernel_size': 3, 'gru_hidden': 240, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.3778336007549755, 'pool_size': 7, 'lr': 0.0006819293174247944}. Best is trial 0 with value: 20488743.82045201.
+Epoch 1/100, Train Loss: 1395998586.462921, Val Loss: 429563615.373138, LR: 0.000682
+Epoch 5/100, Train Loss: 165402050.053933, Val Loss: 30481114.214355, LR: 0.000682
+Epoch 10/100, Train Loss: 101199030.682022, Val Loss: 35900479.747419, LR: 0.000682
+Epoch 15/100, Train Loss: 93833825.826966, Val Loss: 48592155.099121, LR: 0.000341
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 20488743.820452
+[I 2026-03-19 14:15:47,455] Trial 1 finished with value: 26190339.346679688 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 77, 'cnn_channels_1': 38, 'cnn_channels_2': 37, 'kernel_size': 3, 'gru_hidden': 324, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.48078007265184186, 'pool_size': 6, 'lr': 0.00010121704068380014}. Best is trial 0 with value: 20488743.82045201.
+Epoch 1/100, Train Loss: 1490998043.397753, Val Loss: 572299759.791853, LR: 0.000101
+Epoch 5/100, Train Loss: 1233134485.249438, Val Loss: 414368301.622001, LR: 0.000101
+Epoch 10/100, Train Loss: 689309921.725843, Val Loss: 174662388.929260, LR: 0.000101
+Epoch 15/100, Train Loss: 331877965.730337, Val Loss: 58909868.166853, LR: 0.000101
+Epoch 20/100, Train Loss: 167677056.087640, Val Loss: 26190339.346680, LR: 0.000101
+Epoch 25/100, Train Loss: 111247033.532584, Val Loss: 35074013.413853, LR: 0.000101
+Early stopping triggered at epoch 30/100
+Best model saved with validation loss: 26190339.346680
+[I 2026-03-19 14:16:22,727] Trial 2 finished with value: 23275253.90598842 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 70, 'cnn_channels_1': 130, 'kernel_size': 5, 'gru_hidden': 340, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.18603347096191244, 'pool_size': 3, 'lr': 0.0006259605455816364}. Best is trial 0 with value: 20488743.82045201.
+Epoch 1/100, Train Loss: 1360647280.251685, Val Loss: 463515079.357143, LR: 0.000626
+Epoch 5/100, Train Loss: 138653747.761798, Val Loss: 23275253.905988, LR: 0.000626
+Epoch 10/100, Train Loss: 100384122.633708, Val Loss: 38642423.102975, LR: 0.000626
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 23275253.905988
+[I 2026-03-19 14:17:59,383] Trial 3 finished with value: 28817620.582208905 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 136, 'cnn_channels_1': 127, 'cnn_channels_2': 190, 'kernel_size': 5, 'gru_hidden': 233, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.16918521141580958, 'pool_size': 5, 'lr': 0.00013698635939480454}. Best is trial 0 with value: 20488743.82045201.
+Epoch 1/100, Train Loss: 1492709614.705618, Val Loss: 573228445.325893, LR: 0.000137
+Epoch 5/100, Train Loss: 1244279730.408989, Val Loss: 420567438.568054, LR: 0.000137
+Epoch 10/100, Train Loss: 669195841.860674, Val Loss: 167581400.319650, LR: 0.000137
+Epoch 15/100, Train Loss: 306320211.330337, Val Loss: 53368074.676130, LR: 0.000137
+Epoch 20/100, Train Loss: 149084553.528090, Val Loss: 31009213.741629, LR: 0.000137
+Epoch 25/100, Train Loss: 97924362.239326, Val Loss: 34596308.774344, LR: 0.000137
+Epoch 30/100, Train Loss: 87016917.164045, Val Loss: 37038172.304844, LR: 0.000068
+Early stopping triggered at epoch 32/100
+Best model saved with validation loss: 28817620.582209
+[I 2026-03-19 14:18:38,142] Trial 4 finished with value: 22225093.55339704 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 78, 'cnn_channels_1': 197, 'cnn_channels_2': 211, 'kernel_size': 3, 'gru_hidden': 322, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.44926838932480195, 'pool_size': 3, 'lr': 0.0003328548075876368}. Best is trial 0 with value: 20488743.82045201.
+Epoch 1/100, Train Loss: 1448053824.323596, Val Loss: 504646314.992449, LR: 0.000333
+Epoch 5/100, Train Loss: 343730113.038202, Val Loss: 50242724.073434, LR: 0.000333
+Epoch 10/100, Train Loss: 111339998.955056, Val Loss: 35509871.313756, LR: 0.000333
+Epoch 15/100, Train Loss: 91920061.416854, Val Loss: 33821406.449044, LR: 0.000166
+Early stopping triggered at epoch 18/100
+Best model saved with validation loss: 22225093.553397
+[I 2026-03-19 14:19:19,800] Trial 5 finished with value: 517108229.5714286 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 110, 'cnn_channels_1': 62, 'cnn_channels_2': 140, 'cnn_channels_3': 139, 'kernel_size': 5, 'gru_hidden': 243, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.3648924157178396, 'pool_size': 6, 'lr': 0.0045803102070739845}. Best is trial 0 with value: 20488743.82045201.
+Epoch 1/100, Train Loss: 1147949366.256180, Val Loss: 540104297.000000, LR: 0.004580
+Epoch 5/100, Train Loss: 1100504085.465168, Val Loss: 531283341.285714, LR: 0.004580
+Epoch 10/100, Train Loss: 1100667590.831461, Val Loss: 533439426.714286, LR: 0.002290
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 517108229.571429
+[I 2026-03-19 14:20:30,927] Trial 6 finished with value: 19503487.741524834 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 236, 'cnn_channels_1': 40, 'cnn_channels_2': 170, 'cnn_channels_3': 230, 'kernel_size': 3, 'gru_hidden': 197, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.3328619286072413, 'pool_size': 5, 'lr': 0.0005541486062984701}. Best is trial 6 with value: 19503487.741524834.
+Epoch 1/100, Train Loss: 1397939019.217978, Val Loss: 433564710.922720, LR: 0.000554
+Epoch 5/100, Train Loss: 157172742.013483, Val Loss: 19503487.741525, LR: 0.000554
+Epoch 10/100, Train Loss: 99086075.435955, Val Loss: 26040054.490583, LR: 0.000554
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 19503487.741525
+[I 2026-03-19 14:21:26,307] Trial 7 finished with value: 22741808.957310267 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 169, 'cnn_channels_1': 204, 'kernel_size': 5, 'gru_hidden': 99, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.11420651621051658, 'pool_size': 5, 'lr': 0.000976602882117341}. Best is trial 6 with value: 19503487.741524834.
+Epoch 1/100, Train Loss: 1410506582.184270, Val Loss: 449700652.658552, LR: 0.000977
+Epoch 5/100, Train Loss: 159761636.343820, Val Loss: 28914201.809082, LR: 0.000977
+Epoch 10/100, Train Loss: 94530922.276966, Val Loss: 35640069.837123, LR: 0.000977
+Epoch 15/100, Train Loss: 88134645.228090, Val Loss: 37605124.949079, LR: 0.000488
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 22741808.957310
+[I 2026-03-19 14:22:12,755] Trial 8 finished with value: 21836618.48451451 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 94, 'cnn_channels_1': 207, 'cnn_channels_2': 67, 'cnn_channels_3': 67, 'kernel_size': 5, 'gru_hidden': 400, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.18407969840110133, 'pool_size': 4, 'lr': 0.002961770928631432}. Best is trial 6 with value: 19503487.741524834.
+Epoch 1/100, Train Loss: 412435653.676404, Val Loss: 59695558.194754, LR: 0.002962
+Epoch 5/100, Train Loss: 97325991.883146, Val Loss: 26277049.298793, LR: 0.002962
+Epoch 10/100, Train Loss: 89402262.258427, Val Loss: 44875163.363421, LR: 0.001481
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 21836618.484515
+[I 2026-03-19 14:23:01,635] Trial 9 finished with value: 21617148.55099923 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 178, 'cnn_channels_1': 55, 'cnn_channels_2': 148, 'kernel_size': 5, 'gru_hidden': 345, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.14149276015029671, 'pool_size': 5, 'lr': 0.0003968042912909268}. Best is trial 6 with value: 19503487.741524834.
+Epoch 1/100, Train Loss: 1433829763.092135, Val Loss: 495990731.187500, LR: 0.000397
+Epoch 5/100, Train Loss: 226687070.613483, Val Loss: 30586261.191546, LR: 0.000397
+Epoch 10/100, Train Loss: 96208636.951685, Val Loss: 22572160.154994, LR: 0.000397
+Epoch 15/100, Train Loss: 86624439.846067, Val Loss: 32704206.319371, LR: 0.000198
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 21617148.550999
+[I 2026-03-19 14:24:24,515] Trial 10 finished with value: 20837262.168631416 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 254, 'cnn_channels_1': 242, 'cnn_channels_2': 255, 'cnn_channels_3': 238, 'kernel_size': 3, 'gru_hidden': 119, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.2751522392775465, 'pool_size': 8, 'lr': 0.0019236084934530434}. Best is trial 6 with value: 19503487.741524834.
+Epoch 1/100, Train Loss: 1208694097.006742, Val Loss: 207042746.849191, LR: 0.001924
+Epoch 5/100, Train Loss: 111602206.546067, Val Loss: 23297904.857840, LR: 0.001924
+Epoch 10/100, Train Loss: 100145644.001124, Val Loss: 26246731.860491, LR: 0.000962
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 20837262.168631
+[I 2026-03-19 14:24:57,795] Trial 11 finished with value: 19424660.348388672 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 234, 'cnn_channels_1': 91, 'kernel_size': 3, 'gru_hidden': 187, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.35499902863842864, 'pool_size': 8, 'lr': 0.00855264943291043}. Best is trial 11 with value: 19424660.348388672.
+Epoch 1/100, Train Loss: 309863182.811236, Val Loss: 19424660.348389, LR: 0.008553
+Epoch 5/100, Train Loss: 106180007.430337, Val Loss: 22425368.759905, LR: 0.008553
+Epoch 10/100, Train Loss: 96056076.123596, Val Loss: 25168509.641183, LR: 0.004276
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 19424660.348389
+[I 2026-03-19 14:25:35,837] Trial 12 finished with value: 19126496.129708428 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 251, 'cnn_channels_1': 92, 'cnn_channels_2': 107, 'cnn_channels_3': 254, 'kernel_size': 3, 'gru_hidden': 507, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.30186994559179314, 'pool_size': 8, 'lr': 0.001560756353261503}. Best is trial 12 with value: 19126496.129708428.
+Epoch 1/100, Train Loss: 505029373.719101, Val Loss: 19126496.129708, LR: 0.001561
+Epoch 5/100, Train Loss: 97055918.370787, Val Loss: 35677548.820312, LR: 0.001561
+Epoch 10/100, Train Loss: 90170236.620225, Val Loss: 26667205.166155, LR: 0.000780
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 19126496.129708
+[I 2026-03-19 14:26:09,884] Trial 13 finished with value: 18853312.13169643 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 214, 'cnn_channels_1': 99, 'kernel_size': 3, 'gru_hidden': 486, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.2605408036333393, 'pool_size': 8, 'lr': 0.00975419624796143}. Best is trial 13 with value: 18853312.13169643.
+Epoch 1/100, Train Loss: 197110689.357303, Val Loss: 18853312.131696, LR: 0.009754
+Epoch 5/100, Train Loss: 101371434.800000, Val Loss: 22795098.159459, LR: 0.009754
+Epoch 10/100, Train Loss: 93096276.340449, Val Loss: 39277099.058454, LR: 0.004877
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 18853312.131696
+[I 2026-03-19 14:27:01,560] Trial 14 finished with value: 31104781.3359375 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 205, 'cnn_channels_1': 101, 'cnn_channels_2': 96, 'kernel_size': 3, 'gru_hidden': 509, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.2510774315619067, 'pool_size': 7, 'lr': 0.007254360041181666}. Best is trial 13 with value: 18853312.13169643.
+Epoch 1/100, Train Loss: 212634213.525843, Val Loss: 43523599.149065, LR: 0.007254
+Epoch 5/100, Train Loss: 97811689.885393, Val Loss: 67731986.873884, LR: 0.007254
+Epoch 10/100, Train Loss: 92636670.140449, Val Loss: 65791871.112653, LR: 0.007254
+Epoch 15/100, Train Loss: 87257423.191011, Val Loss: 38564320.799107, LR: 0.003627
+Early stopping triggered at epoch 17/100
+Best model saved with validation loss: 31104781.335938
+[I 2026-03-19 14:27:38,914] Trial 15 finished with value: 18618418.065255303 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 33, 'cnn_channels_1': 150, 'cnn_channels_2': 108, 'cnn_channels_3': 168, 'kernel_size': 3, 'gru_hidden': 487, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.24750667774527424, 'pool_size': 8, 'lr': 0.002066137422401931}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 453798736.337079, Val Loss: 18618418.065255, LR: 0.002066
+Epoch 5/100, Train Loss: 97781459.008989, Val Loss: 19917705.963309, LR: 0.002066
+Epoch 10/100, Train Loss: 90343813.779775, Val Loss: 35469213.381836, LR: 0.001033
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 18618418.065255
+[I 2026-03-19 14:28:14,230] Trial 16 finished with value: 18841380.237932477 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 199, 'cnn_channels_1': 160, 'kernel_size': 3, 'gru_hidden': 427, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.2344435694472154, 'pool_size': 7, 'lr': 0.004139591907132527}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 299553852.413483, Val Loss: 32887608.764300, LR: 0.004140
+Epoch 5/100, Train Loss: 98017957.135955, Val Loss: 48062669.783866, LR: 0.004140
+Epoch 10/100, Train Loss: 90558139.201124, Val Loss: 28870878.124581, LR: 0.002070
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 18841380.237932
+[I 2026-03-19 14:29:10,771] Trial 17 finished with value: 20734435.61704799 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 186, 'cnn_channels_1': 165, 'cnn_channels_2': 106, 'kernel_size': 3, 'gru_hidden': 436, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.21609706925275118, 'pool_size': 7, 'lr': 0.0024742153302316464}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 416048892.305618, Val Loss: 24845410.522321, LR: 0.002474
+Epoch 5/100, Train Loss: 99079277.840449, Val Loss: 28663888.404297, LR: 0.002474
+Epoch 10/100, Train Loss: 91005596.543820, Val Loss: 25243469.961147, LR: 0.001237
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 20734435.617048
+[I 2026-03-19 14:29:36,886] Trial 18 finished with value: 20249314.97670201 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 37, 'cnn_channels_1': 169, 'cnn_channels_2': 33, 'cnn_channels_3': 151, 'kernel_size': 3, 'gru_hidden': 431, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.21946137180333591, 'pool_size': 2, 'lr': 0.004128298666817427}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 308908781.040449, Val Loss: 22887677.531110, LR: 0.004128
+Epoch 5/100, Train Loss: 98801522.659551, Val Loss: 24411350.833043, LR: 0.004128
+Epoch 10/100, Train Loss: 90097744.086517, Val Loss: 53473799.909459, LR: 0.002064
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 20249314.976702
+[I 2026-03-19 14:30:28,222] Trial 19 finished with value: 19655086.377511162 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 43, 'cnn_channels_1': 156, 'kernel_size': 3, 'gru_hidden': 453, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.41499263801845826, 'pool_size': 6, 'lr': 0.0012356493956440847}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 702739481.123595, Val Loss: 28191126.082450, LR: 0.001236
+Epoch 5/100, Train Loss: 105509282.193258, Val Loss: 21812550.206299, LR: 0.001236
+Epoch 10/100, Train Loss: 94769419.461798, Val Loss: 43905711.654855, LR: 0.000618
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 19655086.377511
+[I 2026-03-19 14:31:04,287] Trial 20 finished with value: 20018509.079938617 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 157, 'cnn_channels_1': 237, 'cnn_channels_2': 73, 'kernel_size': 3, 'gru_hidden': 384, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.28950944878078744, 'pool_size': 7, 'lr': 0.004736902638892234}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 271776405.438202, Val Loss: 25826950.356306, LR: 0.004737
+Epoch 5/100, Train Loss: 96653955.183146, Val Loss: 34482274.065290, LR: 0.004737
+Epoch 10/100, Train Loss: 90446496.507865, Val Loss: 41823710.843052, LR: 0.002368
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 20018509.079939
+[I 2026-03-19 14:31:38,241] Trial 21 finished with value: 19429122.121651787 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 209, 'cnn_channels_1': 120, 'kernel_size': 3, 'gru_hidden': 480, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.23655610456935686, 'pool_size': 8, 'lr': 0.009905193316659719}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 195187014.671910, Val Loss: 19429122.121652, LR: 0.009905
+Epoch 5/100, Train Loss: 101334779.919101, Val Loss: 40608106.585379, LR: 0.009905
+Epoch 10/100, Train Loss: 91507648.051124, Val Loss: 54448696.259487, LR: 0.004953
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 19429122.121652
+[I 2026-03-19 14:32:15,052] Trial 22 finished with value: 24674432.77922712 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 213, 'cnn_channels_1': 180, 'kernel_size': 3, 'gru_hidden': 396, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.31767069630409017, 'pool_size': 8, 'lr': 0.006175967992661234}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 255970693.388764, Val Loss: 25301379.880999, LR: 0.006176
+Epoch 5/100, Train Loss: 100065045.680899, Val Loss: 28404347.183524, LR: 0.006176
+Epoch 10/100, Train Loss: 93403697.433708, Val Loss: 40349191.758929, LR: 0.003088
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 24674432.779227
+[I 2026-03-19 14:32:49,290] Trial 23 finished with value: 19292327.52908761 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 194, 'cnn_channels_1': 152, 'kernel_size': 3, 'gru_hidden': 464, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.2676321167835986, 'pool_size': 7, 'lr': 0.0030368570477489016}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 348206139.580899, Val Loss: 25044058.452706, LR: 0.003037
+Epoch 5/100, Train Loss: 99064244.006742, Val Loss: 20941919.776228, LR: 0.003037
+Epoch 10/100, Train Loss: 89716570.665169, Val Loss: 36711471.052490, LR: 0.001518
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 19292327.529088
+[I 2026-03-19 14:33:29,427] Trial 24 finished with value: 20852594.96306501 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 156, 'cnn_channels_1': 140, 'kernel_size': 3, 'gru_hidden': 486, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.21403978716589392, 'pool_size': 8, 'lr': 0.006104232609618946}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 229532965.173034, Val Loss: 25159661.334647, LR: 0.006104
+Epoch 5/100, Train Loss: 98249984.257303, Val Loss: 50295823.738351, LR: 0.006104
+Epoch 10/100, Train Loss: 90198833.967416, Val Loss: 33309364.831473, LR: 0.003052
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 20852594.963065
+[I 2026-03-19 14:34:22,904] Trial 25 finished with value: 21831664.19618443 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 223, 'cnn_channels_1': 117, 'kernel_size': 3, 'gru_hidden': 420, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.25626811172145597, 'pool_size': 6, 'lr': 0.0036384112541321817}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 339278481.325843, Val Loss: 34972120.567522, LR: 0.003638
+Epoch 5/100, Train Loss: 100648678.844382, Val Loss: 30293817.452672, LR: 0.003638
+Epoch 10/100, Train Loss: 90349261.570787, Val Loss: 29703912.930804, LR: 0.001819
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 21831664.196184
+[I 2026-03-19 14:35:11,269] Trial 26 finished with value: 22234720.44792829 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 115, 'cnn_channels_1': 180, 'cnn_channels_2': 235, 'kernel_size': 3, 'gru_hidden': 376, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.14889171984697078, 'pool_size': 7, 'lr': 0.0020270329361197314}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 501926015.435955, Val Loss: 25042398.282087, LR: 0.002027
+Epoch 5/100, Train Loss: 95781048.874157, Val Loss: 39003581.645089, LR: 0.002027
+Epoch 10/100, Train Loss: 90831729.791011, Val Loss: 45777406.255755, LR: 0.002027
+Epoch 15/100, Train Loss: 84903968.761798, Val Loss: 35424571.788644, LR: 0.001014
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 22234720.447928
+[I 2026-03-19 14:36:43,543] Trial 27 finished with value: 22191310.687848773 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 55, 'cnn_channels_1': 107, 'cnn_channels_2': 135, 'kernel_size': 3, 'gru_hidden': 470, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.20479007253485906, 'pool_size': 8, 'lr': 0.005910238376385606}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 282984570.624719, Val Loss: 24386098.517857, LR: 0.005910
+Epoch 5/100, Train Loss: 100276735.182022, Val Loss: 32005620.957589, LR: 0.005910
+Epoch 10/100, Train Loss: 97025145.652809, Val Loss: 42309742.494978, LR: 0.005910
+Epoch 15/100, Train Loss: 90952620.510674, Val Loss: 34010833.661133, LR: 0.002955
+Early stopping triggered at epoch 18/100
+Best model saved with validation loss: 22191310.687849
+[I 2026-03-19 14:37:20,566] Trial 28 finished with value: 22055290.180036273 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 194, 'cnn_channels_1': 142, 'kernel_size': 3, 'gru_hidden': 276, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.2965551946068818, 'pool_size': 7, 'lr': 0.001245887009911179}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 937610002.364045, Val Loss: 59632466.312618, LR: 0.001246
+Epoch 5/100, Train Loss: 103416761.191011, Val Loss: 38031113.717913, LR: 0.001246
+Epoch 10/100, Train Loss: 92858629.942697, Val Loss: 39050776.903251, LR: 0.000623
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 22055290.180036
+[I 2026-03-19 14:38:03,808] Trial 29 finished with value: 20583255.02734375 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 121, 'cnn_channels_1': 75, 'kernel_size': 3, 'gru_hidden': 439, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.40814475541438033, 'pool_size': 7, 'lr': 0.0008763679221258663}. Best is trial 15 with value: 18618418.065255303.
+Epoch 1/100, Train Loss: 876590602.094382, Val Loss: 47908014.716588, LR: 0.000876
+Epoch 5/100, Train Loss: 106463332.924719, Val Loss: 20583255.027344, LR: 0.000876
+Epoch 10/100, Train Loss: 98091831.841573, Val Loss: 28435702.803746, LR: 0.000876
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 20583255.027344
+Epoch 1/100, Train Loss: 464376157.379775, Val Loss: 22265515.167550, LR: 0.002066
+Epoch 5/100, Train Loss: 96398266.235955, Val Loss: 24711873.444824, LR: 0.002066
+Epoch 10/100, Train Loss: 88875178.308989, Val Loss: 41063723.020403, LR: 0.001033
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 22265515.167550
+
+--- Metrics for all houses ---
+
+Metrics:
+MAE sklearn (lower is better):  7261.2431640625
+Normalized MAE (lower is better):  0.2166824
+MAPE sklearn (lower is better):  2.6878674996507443e+17 %
+MSE (lower is better):  187672448.0
+RMSE (lower is better):  13699.359401081498
+NRMSE (lower is better):  0.4088019
+R2 (higher is better):  0.8948575854301453
+
+
+--- Metrics for house id 4 ---
+
+Metrics:
+MAE sklearn (lower is better):  7261.2431640625
+Normalized MAE (lower is better):  0.2166824
+MAPE sklearn (lower is better):  2.6878674996507443e+17 %
+MSE (lower is better):  187672448.0
+RMSE (lower is better):  13699.359401081498
+NRMSE (lower is better):  0.4088019
+R2 (higher is better):  0.8948575854301453
+
+--------------------  Sites for site_id 5: ['aieg_FABLANTO_213310817/production']  --------------------
+Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]Creating temporal split: 100%|██████████| 1/1 [00:00<00:00, 14.88it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  4.01it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  4.01it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  3.11it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  3.11it/s]
+Initialization of the data and indices:   0%|          | 0/1 [00:00<?, ?it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  4.36it/s]Initialization of the data and indices: 100%|██████████| 1/1 [00:00<00:00,  4.36it/s]
+[I 2026-03-19 14:39:04,877] A new study created in memory with name: no-name-c8fe64d8-c375-4bb1-9459-00413fc845e9
+[I 2026-03-19 14:39:40,801] Trial 0 finished with value: 2024762.0554202301 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 102, 'cnn_channels_1': 126, 'cnn_channels_2': 49, 'cnn_channels_3': 250, 'kernel_size': 5, 'gru_hidden': 244, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.2331984449842225, 'pool_size': 6, 'lr': 0.0012649711311973637}. Best is trial 0 with value: 2024762.0554202301.
+Epoch 1/100, Train Loss: 9319825.101702, Val Loss: 3027501.153903, LR: 0.001265
+Epoch 5/100, Train Loss: 1921288.673247, Val Loss: 2202022.152635, LR: 0.001265
+Epoch 10/100, Train Loss: 1716198.698871, Val Loss: 3802669.133302, LR: 0.001265
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 2024762.055420
+[I 2026-03-19 14:40:38,520] Trial 1 finished with value: 1994259.1898559802 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 147, 'cnn_channels_1': 185, 'cnn_channels_2': 249, 'kernel_size': 5, 'gru_hidden': 290, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.3254809301133884, 'pool_size': 6, 'lr': 0.0001300841983302502}. Best is trial 1 with value: 1994259.1898559802.
+Epoch 1/100, Train Loss: 17541002.416905, Val Loss: 8484007.609573, LR: 0.000130
+Epoch 5/100, Train Loss: 4082527.447837, Val Loss: 3222561.835306, LR: 0.000130
+Epoch 10/100, Train Loss: 1796705.387166, Val Loss: 5244174.314081, LR: 0.000130
+Epoch 15/100, Train Loss: 1578239.698314, Val Loss: 6509531.712147, LR: 0.000065
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 1994259.189856
+[I 2026-03-19 14:42:17,249] Trial 2 finished with value: 2169201.769773796 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 239, 'cnn_channels_1': 177, 'cnn_channels_2': 174, 'cnn_channels_3': 103, 'kernel_size': 5, 'gru_hidden': 244, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.20032539839362734, 'pool_size': 6, 'lr': 0.008986335579384178}. Best is trial 1 with value: 1994259.1898559802.
+Epoch 1/100, Train Loss: 3717475.632156, Val Loss: 3127442.697628, LR: 0.008986
+Epoch 5/100, Train Loss: 2011031.255149, Val Loss: 2612971.985429, LR: 0.008986
+Epoch 10/100, Train Loss: 1840663.071843, Val Loss: 3371489.868523, LR: 0.008986
+Epoch 15/100, Train Loss: 1691352.949328, Val Loss: 5557863.548665, LR: 0.004493
+Epoch 20/100, Train Loss: 1663783.164281, Val Loss: 4203561.511918, LR: 0.004493
+Epoch 25/100, Train Loss: 1598893.027871, Val Loss: 3506296.266109, LR: 0.002247
+Early stopping triggered at epoch 27/100
+Best model saved with validation loss: 2169201.769774
+[I 2026-03-19 14:43:19,664] Trial 3 finished with value: 1259659.2364267677 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 228, 'cnn_channels_1': 233, 'kernel_size': 3, 'gru_hidden': 301, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.14486945993283384, 'pool_size': 8, 'lr': 0.0016952359241929683}. Best is trial 3 with value: 1259659.2364267677.
+Epoch 1/100, Train Loss: 6866617.028109, Val Loss: 1259659.236427, LR: 0.001695
+Epoch 5/100, Train Loss: 1932290.379572, Val Loss: 2855772.059145, LR: 0.001695
+Epoch 10/100, Train Loss: 1653300.759244, Val Loss: 4740482.785960, LR: 0.000848
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 1259659.236427
+[I 2026-03-19 14:43:45,190] Trial 4 finished with value: 1996803.185618391 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 241, 'cnn_channels_1': 188, 'kernel_size': 3, 'gru_hidden': 187, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.27953607247260304, 'pool_size': 2, 'lr': 0.004328863862490392}. Best is trial 3 with value: 1259659.2364267677.
+Epoch 1/100, Train Loss: 6837439.540394, Val Loss: 2177466.301922, LR: 0.004329
+Epoch 5/100, Train Loss: 1870239.599147, Val Loss: 2956963.351662, LR: 0.004329
+Epoch 10/100, Train Loss: 1781422.126869, Val Loss: 4115985.310009, LR: 0.004329
+Epoch 15/100, Train Loss: 1682170.923376, Val Loss: 6645139.820059, LR: 0.002164
+Early stopping triggered at epoch 16/100
+Best model saved with validation loss: 1996803.185618
+[I 2026-03-19 14:44:24,657] Trial 5 finished with value: 1824334.7040485034 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 120, 'cnn_channels_1': 49, 'cnn_channels_2': 38, 'cnn_channels_3': 63, 'kernel_size': 3, 'gru_hidden': 112, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.2070424780977843, 'pool_size': 5, 'lr': 0.0003700585969197252}. Best is trial 3 with value: 1259659.2364267677.
+Epoch 1/100, Train Loss: 17927901.326336, Val Loss: 9111496.507277, LR: 0.000370
+Epoch 5/100, Train Loss: 6322036.563653, Val Loss: 2321225.888964, LR: 0.000370
+Epoch 10/100, Train Loss: 2146824.099555, Val Loss: 5748853.101196, LR: 0.000370
+Epoch 15/100, Train Loss: 1673686.262146, Val Loss: 5065384.201531, LR: 0.000185
+Early stopping triggered at epoch 17/100
+Best model saved with validation loss: 1824334.704049
+[I 2026-03-19 14:44:51,335] Trial 6 finished with value: 2449641.5834134803 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 250, 'cnn_channels_1': 76, 'kernel_size': 3, 'gru_hidden': 102, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.10042348199578109, 'pool_size': 7, 'lr': 0.003460627840952393}. Best is trial 3 with value: 1259659.2364267677.
+Epoch 1/100, Train Loss: 13852669.055662, Val Loss: 2449641.583413, LR: 0.003461
+Epoch 5/100, Train Loss: 1906889.089874, Val Loss: 2622789.457159, LR: 0.003461
+Epoch 10/100, Train Loss: 1642843.469018, Val Loss: 5774613.622248, LR: 0.001730
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 2449641.583413
+[I 2026-03-19 14:45:32,474] Trial 7 finished with value: 2362557.311022826 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 66, 'cnn_channels_1': 178, 'cnn_channels_2': 186, 'cnn_channels_3': 65, 'kernel_size': 5, 'gru_hidden': 266, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.30120681174618924, 'pool_size': 3, 'lr': 0.0020106983965474815}. Best is trial 3 with value: 1259659.2364267677.
+Epoch 1/100, Train Loss: 6659915.683286, Val Loss: 4761338.203764, LR: 0.002011
+Epoch 5/100, Train Loss: 2031662.064468, Val Loss: 8059037.906413, LR: 0.002011
+Epoch 10/100, Train Loss: 1762578.852586, Val Loss: 2362557.311023, LR: 0.001005
+Epoch 15/100, Train Loss: 1607894.726423, Val Loss: 8279468.370575, LR: 0.001005
+Early stopping triggered at epoch 20/100
+Best model saved with validation loss: 2362557.311023
+[I 2026-03-19 14:46:50,197] Trial 8 finished with value: 1069942.7782882536 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 113, 'cnn_channels_1': 256, 'cnn_channels_2': 171, 'cnn_channels_3': 252, 'kernel_size': 3, 'gru_hidden': 292, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.34657701761175586, 'pool_size': 4, 'lr': 0.004897092913516434}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 15819649.576654, Val Loss: 8845135.868687, LR: 0.004897
+Epoch 5/100, Train Loss: 15755037.849237, Val Loss: 8863897.313131, LR: 0.004897
+Epoch 10/100, Train Loss: 2098758.659192, Val Loss: 1069942.778288, LR: 0.004897
+Epoch 15/100, Train Loss: 1941550.020804, Val Loss: 1474955.888859, LR: 0.004897
+Early stopping triggered at epoch 20/100
+Best model saved with validation loss: 1069942.778288
+[I 2026-03-19 14:47:26,848] Trial 9 finished with value: 2009067.6758329219 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 245, 'cnn_channels_1': 70, 'kernel_size': 3, 'gru_hidden': 423, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.14447811049205145, 'pool_size': 4, 'lr': 0.00025113478219517427}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 15892300.399253, Val Loss: 5784580.249242, LR: 0.000251
+Epoch 5/100, Train Loss: 2063850.806407, Val Loss: 2009067.675833, LR: 0.000251
+Epoch 10/100, Train Loss: 1687935.155534, Val Loss: 6105664.354338, LR: 0.000251
+Early stopping triggered at epoch 15/100
+Best model saved with validation loss: 2009067.675833
+[I 2026-03-19 14:47:51,286] Trial 10 finished with value: 1301575.7532015713 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 179, 'cnn_channels_1': 245, 'cnn_channels_2': 108, 'kernel_size': 3, 'gru_hidden': 507, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.4371012739943937, 'pool_size': 4, 'lr': 0.00714013257100159}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 2924929.123191, Val Loss: 1301575.753202, LR: 0.007140
+Epoch 5/100, Train Loss: 1957686.698284, Val Loss: 3424760.585589, LR: 0.007140
+Epoch 10/100, Train Loss: 1697047.894899, Val Loss: 2345108.938339, LR: 0.003570
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 1301575.753202
+[I 2026-03-19 14:48:55,703] Trial 11 finished with value: 2484582.528978136 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 176, 'cnn_channels_1': 253, 'cnn_channels_2': 122, 'kernel_size': 3, 'gru_hidden': 360, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.3975602354181386, 'pool_size': 8, 'lr': 0.000733808671870943}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 8701676.638160, Val Loss: 2484582.528978, LR: 0.000734
+Epoch 5/100, Train Loss: 1877779.761987, Val Loss: 7043534.965780, LR: 0.000734
+Epoch 10/100, Train Loss: 1653379.124046, Val Loss: 6001291.498274, LR: 0.000367
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 2484582.528978
+[I 2026-03-19 14:50:18,489] Trial 12 finished with value: 1275168.3013854364 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 52, 'cnn_channels_1': 222, 'cnn_channels_2': 240, 'kernel_size': 3, 'gru_hidden': 347, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.4972158970797801, 'pool_size': 8, 'lr': 0.0024354847649375377}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 15842515.101463, Val Loss: 9036681.429293, LR: 0.002435
+Epoch 5/100, Train Loss: 1942883.543297, Val Loss: 2510884.644998, LR: 0.002435
+Epoch 10/100, Train Loss: 1801187.146032, Val Loss: 2815003.610025, LR: 0.002435
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 1275168.301385
+[I 2026-03-19 14:51:05,536] Trial 13 finished with value: 1333700.5620009296 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 190, 'cnn_channels_1': 217, 'kernel_size': 3, 'gru_hidden': 359, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.34658974816110033, 'pool_size': 4, 'lr': 0.001095814913768127}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 8169109.007594, Val Loss: 1731504.460723, LR: 0.001096
+Epoch 5/100, Train Loss: 2059472.960520, Val Loss: 6353813.322773, LR: 0.001096
+Epoch 10/100, Train Loss: 1733409.463442, Val Loss: 6408333.278905, LR: 0.000548
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 1333700.562001
+[I 2026-03-19 14:51:59,977] Trial 14 finished with value: 2458131.6947718146 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 87, 'cnn_channels_1': 125, 'cnn_channels_2': 191, 'kernel_size': 3, 'gru_hidden': 164, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.3751541298079993, 'pool_size': 2, 'lr': 0.005347410341553017}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 15861606.523378, Val Loss: 8919559.871212, LR: 0.005347
+Epoch 5/100, Train Loss: 2240188.613609, Val Loss: 4593808.261147, LR: 0.005347
+Epoch 10/100, Train Loss: 1966832.021211, Val Loss: 3066832.269579, LR: 0.005347
+Epoch 15/100, Train Loss: 1918000.036101, Val Loss: 2521915.556514, LR: 0.005347
+Epoch 20/100, Train Loss: 1783602.642792, Val Loss: 4291393.625676, LR: 0.002674
+Early stopping triggered at epoch 21/100
+Best model saved with validation loss: 2458131.694772
+[I 2026-03-19 14:52:29,212] Trial 15 finished with value: 1512951.9990751478 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 142, 'cnn_channels_1': 218, 'kernel_size': 3, 'gru_hidden': 433, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.25710824728109216, 'pool_size': 5, 'lr': 0.0019947711799736087}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 4210823.616889, Val Loss: 2031250.684289, LR: 0.001995
+Epoch 5/100, Train Loss: 1827680.946354, Val Loss: 1880404.782785, LR: 0.001995
+Epoch 10/100, Train Loss: 1624260.214506, Val Loss: 5053227.495245, LR: 0.000997
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 1512951.999075
+[I 2026-03-19 14:53:40,125] Trial 16 finished with value: 1355962.133961687 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 206, 'cnn_channels_1': 255, 'cnn_channels_2': 89, 'cnn_channels_3': 237, 'kernel_size': 3, 'gru_hidden': 318, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.1623886939096394, 'pool_size': 7, 'lr': 0.0005971985292670766}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 10512228.421994, Val Loss: 2718852.467586, LR: 0.000597
+Epoch 5/100, Train Loss: 1795384.089973, Val Loss: 5323106.758149, LR: 0.000597
+Epoch 10/100, Train Loss: 1615502.289778, Val Loss: 4420763.412358, LR: 0.000299
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 1355962.133962
+[I 2026-03-19 14:54:42,262] Trial 17 finished with value: 1579812.9072295295 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 144, 'cnn_channels_1': 149, 'cnn_channels_2': 152, 'kernel_size': 3, 'gru_hidden': 190, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.43197306297358584, 'pool_size': 3, 'lr': 0.003062807129594412}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 14841911.368480, Val Loss: 2532846.405816, LR: 0.003063
+Epoch 5/100, Train Loss: 2079907.877415, Val Loss: 2029186.864441, LR: 0.003063
+Epoch 10/100, Train Loss: 1827553.441854, Val Loss: 1579812.907230, LR: 0.003063
+Epoch 15/100, Train Loss: 1762012.704139, Val Loss: 3963944.770820, LR: 0.003063
+Early stopping triggered at epoch 20/100
+Best model saved with validation loss: 1579812.907230
+[I 2026-03-19 14:55:45,448] Trial 18 finished with value: 1821402.2913041548 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 211, 'cnn_channels_1': 224, 'kernel_size': 5, 'gru_hidden': 430, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.11358986512043465, 'pool_size': 7, 'lr': 0.001261371327876484}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 6393293.165792, Val Loss: 1821402.291304, LR: 0.001261
+Epoch 5/100, Train Loss: 1912864.274928, Val Loss: 3899307.099446, LR: 0.001261
+Epoch 10/100, Train Loss: 1656776.107844, Val Loss: 5728917.731270, LR: 0.000631
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 1821402.291304
+[I 2026-03-19 14:56:08,700] Trial 19 finished with value: 1563965.5515038075 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 34, 'cnn_channels_1': 204, 'cnn_channels_2': 214, 'cnn_channels_3': 178, 'kernel_size': 3, 'gru_hidden': 226, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.33826806182806785, 'pool_size': 3, 'lr': 0.009852936268505154}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 3113860.921915, Val Loss: 1563965.551504, LR: 0.009853
+Epoch 5/100, Train Loss: 1989669.033397, Val Loss: 3029947.288369, LR: 0.009853
+Epoch 10/100, Train Loss: 1760459.347885, Val Loss: 6683777.430364, LR: 0.004926
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 1563965.551504
+[I 2026-03-19 14:57:50,412] Trial 20 finished with value: 1851147.4877968219 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 108, 'cnn_channels_1': 158, 'cnn_channels_2': 151, 'kernel_size': 3, 'gru_hidden': 283, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.17710179655404046, 'pool_size': 5, 'lr': 0.0052926611668993005}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 7165804.276559, Val Loss: 4779855.200245, LR: 0.005293
+Epoch 5/100, Train Loss: 1999678.358958, Val Loss: 2807434.462420, LR: 0.005293
+Epoch 10/100, Train Loss: 1965678.132574, Val Loss: 2123574.382990, LR: 0.005293
+Epoch 15/100, Train Loss: 1812888.294748, Val Loss: 2461950.310469, LR: 0.002646
+Epoch 20/100, Train Loss: 1747833.008657, Val Loss: 2267475.414497, LR: 0.002646
+Early stopping triggered at epoch 24/100
+Best model saved with validation loss: 1851147.487797
+[I 2026-03-19 14:58:56,114] Trial 21 finished with value: 1613958.3530248776 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 57, 'cnn_channels_1': 236, 'cnn_channels_2': 253, 'kernel_size': 3, 'gru_hidden': 349, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.48881765879861894, 'pool_size': 8, 'lr': 0.001994438274295134}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 7899587.141698, Val Loss: 1613958.353025, LR: 0.001994
+Epoch 5/100, Train Loss: 1957349.939269, Val Loss: 2163015.578994, LR: 0.001994
+Epoch 10/100, Train Loss: 1689392.449587, Val Loss: 7686025.140026, LR: 0.000997
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 1613958.353025
+[I 2026-03-19 14:59:58,656] Trial 22 finished with value: 2447313.6368160825 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 75, 'cnn_channels_1': 231, 'kernel_size': 3, 'gru_hidden': 322, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.482009688449674, 'pool_size': 8, 'lr': 0.0027361425379598013}. Best is trial 8 with value: 1069942.7782882536.
+Epoch 1/100, Train Loss: 5534518.014711, Val Loss: 2447313.636816, LR: 0.002736
+Epoch 5/100, Train Loss: 2041377.996919, Val Loss: 5356012.060263, LR: 0.002736
+Epoch 10/100, Train Loss: 1734978.429310, Val Loss: 3183871.312363, LR: 0.001368
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 2447313.636816
+[I 2026-03-19 15:01:17,323] Trial 23 finished with value: 1069162.256961938 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 33, 'cnn_channels_1': 206, 'cnn_channels_2': 221, 'kernel_size': 3, 'gru_hidden': 392, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.4351929765534615, 'pool_size': 8, 'lr': 0.0017199885648034366}. Best is trial 23 with value: 1069162.256961938.
+Epoch 1/100, Train Loss: 8769152.574427, Val Loss: 1520559.554009, LR: 0.001720
+Epoch 5/100, Train Loss: 1962760.626014, Val Loss: 1916859.573480, LR: 0.001720
+Epoch 10/100, Train Loss: 1690040.338721, Val Loss: 14763202.253044, LR: 0.000860
+Early stopping triggered at epoch 13/100
+Best model saved with validation loss: 1069162.256962
+[I 2026-03-19 15:02:48,296] Trial 24 finished with value: 1547437.4583576857 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 37, 'cnn_channels_1': 211, 'cnn_channels_2': 215, 'cnn_channels_3': 175, 'kernel_size': 3, 'gru_hidden': 479, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.410292454459752, 'pool_size': 7, 'lr': 0.0015296569789237128}. Best is trial 23 with value: 1069162.256961938.
+Epoch 1/100, Train Loss: 6141699.390705, Val Loss: 2648845.540667, LR: 0.001530
+Epoch 5/100, Train Loss: 2037037.023259, Val Loss: 2977246.178322, LR: 0.001530
+Epoch 10/100, Train Loss: 1820454.525763, Val Loss: 3343638.978139, LR: 0.001530
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 1547437.458358
+[I 2026-03-19 15:03:51,138] Trial 25 finished with value: 3174399.4049193263 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 129, 'cnn_channels_1': 204, 'cnn_channels_2': 218, 'kernel_size': 3, 'gru_hidden': 381, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.36411308418653765, 'pool_size': 6, 'lr': 0.0006293309134780319}. Best is trial 23 with value: 1069162.256961938.
+Epoch 1/100, Train Loss: 9502875.760615, Val Loss: 3656955.072844, LR: 0.000629
+Epoch 5/100, Train Loss: 1903163.566754, Val Loss: 10731221.618863, LR: 0.000629
+Epoch 10/100, Train Loss: 1702854.057312, Val Loss: 12296969.784409, LR: 0.000315
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 3174399.404919
+[I 2026-03-19 15:05:07,489] Trial 26 finished with value: 5080285.0656294385 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 157, 'cnn_channels_1': 241, 'cnn_channels_2': 165, 'kernel_size': 5, 'gru_hidden': 407, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.45735160172491635, 'pool_size': 8, 'lr': 0.003919418551327009}. Best is trial 23 with value: 1069162.256961938.
+Epoch 1/100, Train Loss: 7455933.529858, Val Loss: 5184191.713728, LR: 0.003919
+Epoch 5/100, Train Loss: 2056030.893786, Val Loss: 8702186.085852, LR: 0.003919
+Epoch 10/100, Train Loss: 1730045.294350, Val Loss: 8620628.462075, LR: 0.001960
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 5080285.065629
+[I 2026-03-19 15:06:07,293] Trial 27 finished with value: 1209366.54217406 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 218, 'cnn_channels_1': 197, 'cnn_channels_2': 124, 'cnn_channels_3': 201, 'kernel_size': 3, 'gru_hidden': 309, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.3031491701601689, 'pool_size': 7, 'lr': 0.0008349147560092788}. Best is trial 23 with value: 1069162.256961938.
+Epoch 1/100, Train Loss: 9074892.558842, Val Loss: 1209366.542174, LR: 0.000835
+Epoch 5/100, Train Loss: 1934693.702409, Val Loss: 1965471.720349, LR: 0.000835
+Epoch 10/100, Train Loss: 1665346.684578, Val Loss: 7693146.948394, LR: 0.000417
+Early stopping triggered at epoch 11/100
+Best model saved with validation loss: 1209366.542174
+[I 2026-03-19 15:06:58,760] Trial 28 finished with value: 1378509.2282307942 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 93, 'cnn_channels_1': 167, 'cnn_channels_2': 126, 'cnn_channels_3': 211, 'kernel_size': 3, 'gru_hidden': 393, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.3043035156657687, 'pool_size': 7, 'lr': 0.00044726278852143703}. Best is trial 23 with value: 1069162.256961938.
+Epoch 1/100, Train Loss: 11063260.527592, Val Loss: 1989534.229934, LR: 0.000447
+Epoch 5/100, Train Loss: 1799770.599247, Val Loss: 2564366.060211, LR: 0.000447
+Epoch 10/100, Train Loss: 1582868.604604, Val Loss: 6071695.479022, LR: 0.000224
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 1378509.228231
+[I 2026-03-19 15:07:26,467] Trial 29 finished with value: 2554243.236021572 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 109, 'cnn_channels_1': 113, 'cnn_channels_2': 83, 'cnn_channels_3': 201, 'kernel_size': 5, 'gru_hidden': 466, 'gru_layers': 2, 'bidirectional': False, 'dropout': 0.241965511629393, 'pool_size': 4, 'lr': 0.0009344816361627874}. Best is trial 23 with value: 1069162.256961938.
+Epoch 1/100, Train Loss: 8023530.763080, Val Loss: 2717826.905196, LR: 0.000934
+Epoch 5/100, Train Loss: 1811603.935691, Val Loss: 5249474.232589, LR: 0.000934
+Epoch 10/100, Train Loss: 1604922.523298, Val Loss: 8592448.792519, LR: 0.000467
+Early stopping triggered at epoch 12/100
+Best model saved with validation loss: 2554243.236022
+Epoch 1/100, Train Loss: 6613336.980837, Val Loss: 1743437.896241, LR: 0.001720
+Epoch 5/100, Train Loss: 1989912.075521, Val Loss: 2431462.322167, LR: 0.001720
+Epoch 10/100, Train Loss: 1840230.601920, Val Loss: 4080947.216013, LR: 0.001720
+Early stopping triggered at epoch 14/100
+Best model saved with validation loss: 1349747.566000
+
+--- Metrics for all houses ---
+
+Metrics:
+MAE sklearn (lower is better):  1265.17333984375
+Normalized MAE (lower is better):  0.2833859
+MAPE sklearn (lower is better):  9.941387283372442e+16 %
+MSE (lower is better):  5863318.0
+RMSE (lower is better):  2421.4289169826975
+NRMSE (lower is better):  0.5423754
+R2 (higher is better):  0.8451326489448547
+
+
+--- Metrics for house id 5 ---
+
+Metrics:
+MAE sklearn (lower is better):  1265.17333984375
+Normalized MAE (lower is better):  0.2833859
+MAPE sklearn (lower is better):  9.941387283372442e+16 %
+MSE (lower is better):  5863318.0
+RMSE (lower is better):  2421.4289169826975
+NRMSE (lower is better):  0.5423754
+R2 (higher is better):  0.8451326489448547
+
+--------------------  Sites for site_id 6: ['aieg_DEPOTVIR_212303594/production', 'aieg_DEPOTVIR_0/production']  --------------------
+Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/old_code/AIEG_training.py", line 679, in <module>
+    main_cnn_gru({site_id : sites}, {site_id: drop_period[site_id]}, f'cnn_gru_{etype}', True)
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/old_code/AIEG_training.py", line 470, in main_cnn_gru
+    train_sites, val_sites, test_sites = temporal_split(
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/src/data/preprocessing.py", line 298, in temporal_split
+    train, val, test = create_split(
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/src/data/preprocessing.py", line 194, in create_split
+    df = concat_production_sites(dataset, sn_list)
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/src/data/dataset_loader.py", line 94, in concat_production_sites
+    start_date = min(
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/src/data/dataset_loader.py", line 95, in <genexpr>
+    dataset[f"/aieg_CHAMAIEG_{sn}/{prediction_type}"].set_index('ts').index.min()
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/AIEG_venv_linux/lib/python3.10/site-packages/pandas/io/pytables.py", line 615, in __getitem__
+    return self.get(key)
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/AIEG_venv_linux/lib/python3.10/site-packages/pandas/io/pytables.py", line 825, in get
+    raise KeyError(f"No object named {key} in the file")
+KeyError: 'No object named /aieg_CHAMAIEG_212303594/consumption in the file'
+/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/AIEG_venv_linux/lib/python3.10/site-packages/tables/file.py:114: UnclosedFileWarning: Closing remaining open file: /home/iridia-tower/Bureau/bripetit_phd/aieg/data/processed/aieg.h5
+  warnings.warn(UnclosedFileWarning(msg))

@@ -1,0 +1,9 @@
+data:
+  window_size: 8
+  horizon: 1
+
+features:
+  use_stat_features: true
+  use_time_features: true
+  use_weather_features: true
+  previous_days: 1

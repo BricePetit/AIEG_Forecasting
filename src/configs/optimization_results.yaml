@@ -1,0 +1,55 @@
+disabled_sites:
+- aieg_CHAAIEG2_250692408/consumption
+sites:
+  1:
+    disabled_sites: []
+    n_sites_active: 1
+    n_sites_disabled: 0
+    objective_value: 11645.83203125
+    optimization_success: true
+    status: success
+    total_production_optimized: 11645.83203125
+  2:
+    disabled_sites:
+    - aieg_CHAAIEG2_250692408/consumption
+    n_sites_active: 0
+    n_sites_disabled: 1
+    objective_value: -0.0
+    optimization_success: true
+    status: success
+    total_production_optimized: 0.0
+  3:
+    disabled_sites: []
+    n_sites_active: 1
+    n_sites_disabled: 0
+    objective_value: 1295.77197265625
+    optimization_success: true
+    status: success
+    total_production_optimized: 1295.77197265625
+  4:
+    disabled_sites: []
+    n_sites_active: 1
+    n_sites_disabled: 0
+    objective_value: 493.9922790527344
+    optimization_success: true
+    status: success
+    total_production_optimized: 493.9922790527344
+  5:
+    disabled_sites: []
+    n_sites_active: 1
+    n_sites_disabled: 0
+    objective_value: 547.234619140625
+    optimization_success: true
+    status: success
+    total_production_optimized: 547.234619140625
+  6:
+    disabled_sites: []
+    n_sites_active: 1
+    n_sites_disabled: 0
+    objective_value: 16477.8125
+    optimization_success: true
+    status: success
+    total_production_optimized: 16477.8125
+synthetic_consumption_w: 632.1727999999999
+timestamp: '2026-03-24T15:58:26.579551'
+total_production_optimized: 30460.64340209961

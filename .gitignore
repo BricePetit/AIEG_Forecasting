@@ -22,9 +22,7 @@ plots/
 presentation/
 
 # Models and saved models (source)
-src/models/
 src/saved_models/
-models/
 saved_models/
 
 # Logs and databases
@@ -54,3 +52,12 @@ Thumbs.db
 *.tmp
 *.swp
 *~
+
+# Data files at repository root only (keep src/data tracked)
+/data/
+!/src/data/
+
+# Ignore jupyter notebook outputs (if you want to ignore them, otherwise remove this section)
+*.ipynb
+
+.ruff_cache/

@@ -1,0 +1,110 @@
+====================  Starting training for consumption sites  ====================
+--------------------  Sites for site_id 1: ['aieg_EP_AND_0/consumption']  --------------------
+
+[I 2026-03-18 16:57:12,597] Trial 18 finished with value: 40631735.53068182 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 171, 'cnn_channels_1': 200, 'kernel_size': 5, 'gru_hidden': 260, 'gru_layers': 1, 'bidirectional': True, 'dropout': 0.36859832077603427, 'pool_size': 7, 'lr': 0.0004939806856931489}. Best is trial 18 with value: 40631735.53068182.
+
+Metrics:
+MAE sklearn (lower is better):  19919.197265625
+Normalized MAE (lower is better):  0.37869537
+MAPE sklearn (lower is better):  4.165674844080518e+19 %
+MSE (lower is better):  743451264.0
+RMSE (lower is better):  27266.302719657462
+NRMSE (lower is better):  0.51837546
+R2 (higher is better):  0.5051254034042358
+
+--------------------  Sites for site_id 2: ['aieg_EP_RUM_0/consumption']  --------------------
+
+[I 2026-03-18 18:14:39,486] Trial 23 finished with value: 2107101.8155894885 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 156, 'cnn_channels_1': 144, 'cnn_channels_2': 74, 'cnn_channels_3': 249, 'kernel_size': 3, 'gru_hidden': 456, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.2739806222823723, 'pool_size': 4, 'lr': 0.004136719898999473}. Best is trial 23 with value: 2107101.8155894885.
+
+Metrics:
+MAE sklearn (lower is better):  11486.896484375
+Normalized MAE (lower is better):  0.97249573
+MAPE sklearn (lower is better):  2.972967428759224e+17 %
+MSE (lower is better):  206040080.0
+RMSE (lower is better):  14354.096279459742
+NRMSE (lower is better):  1.2152367
+R2 (higher is better):  -1.7197434902191162
+
+--------------------  Sites for site_id 3: ['aieg_EP_OHE_0/consumption']  --------------------
+
+[I 2026-03-18 18:36:49,862] Trial 3 finished with value: 1241102.2385298295 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 71, 'cnn_channels_1': 54, 'kernel_size': 5, 'gru_hidden': 494, 'gru_layers': 3, 'bidirectional': True, 'dropout': 0.260345729569363, 'pool_size': 5, 'lr': 0.0006694181430869582}. Best is trial 3 with value: 1241102.2385298295.
+
+Metrics:
+MAE sklearn (lower is better):  8004.04443359375
+Normalized MAE (lower is better):  0.8923768
+MAPE sklearn (lower is better):  9.837210274627584e+17 %
+MSE (lower is better):  107952064.0
+RMSE (lower is better):  10389.998267564823
+NRMSE (lower is better):  1.1583885
+R2 (higher is better):  -1.4712390899658203
+
+--------------------  Sites for site_id 4: ['aieg_EP_VIR_0/consumption']  --------------------
+
+[I 2026-03-18 19:37:04,298] Trial 8 finished with value: 9939490.356818182 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 153, 'cnn_channels_1': 64, 'cnn_channels_2': 216, 'kernel_size': 5, 'gru_hidden': 308, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.26577001063379435, 'pool_size': 4, 'lr': 0.0013408596663344401}. Best is trial 8 with value: 9939490.356818182.
+
+Metrics:
+MAE sklearn (lower is better):  12888.3173828125
+Normalized MAE (lower is better):  0.51020086
+MAPE sklearn (lower is better):  1.5709003001500795e+19 %
+MSE (lower is better):  215362192.0
+RMSE (lower is better):  14675.223746164826
+NRMSE (lower is better):  0.58093786
+R2 (higher is better):  0.409379780292511
+
+--------------------  Sites for site_id 5: ['aieg_EP_GVE_0/consumption']  --------------------
+
+[I 2026-03-18 20:25:52,500] Trial 6 finished with value: 2231926.392471591 and parameters: {'cnn_depth': 3, 'cnn_channels_0': 109, 'cnn_channels_1': 237, 'cnn_channels_2': 184, 'kernel_size': 3, 'gru_hidden': 339, 'gru_layers': 3, 'bidirectional': False, 'dropout': 0.4914410815928315, 'pool_size': 6, 'lr': 0.00014748282142414896}. Best is trial 6 with value: 2231926.392471591.
+
+
+Metrics:
+MAE sklearn (lower is better):  12189.75
+Normalized MAE (lower is better):  1.0192465
+MAPE sklearn (lower is better):  8.33469121394901e+18 %
+MSE (lower is better):  195508576.0
+RMSE (lower is better):  13982.438127880274
+NRMSE (lower is better):  1.1691422
+R2 (higher is better):  -1.517333984375
+
+--------------------  Sites for site_id 6: ['aieg_AIEGMAR_0/production']  --------------------
+
+[I 2026-03-18 21:43:14,459] Trial 9 finished with value: 290972010.79310346 and parameters: {'cnn_depth': 2, 'cnn_channels_0': 52, 'cnn_channels_1': 192, 'kernel_size': 5, 'gru_hidden': 417, 'gru_layers': 2, 'bidirectional': True, 'dropout': 0.4204856639750191, 'pool_size': 6, 'lr': 0.0021458140669208116}. Best is trial 9 with value: 290972010.79310346.
+
+Metrics:
+MAE sklearn (lower is better):  371114.5625
+Normalized MAE (lower is better):  15.877496
+MAPE sklearn (lower is better):  9.163001811615456e+19 %
+MSE (lower is better):  178919489536.0
+RMSE (lower is better):  422988.75816740096
+NRMSE (lower is better):  18.096844
+R2 (higher is better):  -331.5400085449219
+
+--------------------  Sites for site_id 7: ['aieg_FABLANTO_213310817/consumption']  --------------------
+
+[I 2026-03-18 22:38:41,624] Trial 3 finished with value: 1688476.0818661973 and parameters: {'cnn_depth': 4, 'cnn_channels_0': 173, 'cnn_channels_1': 225, 'cnn_channels_2': 85, 'cnn_channels_3': 114, 'kernel_size': 3, 'gru_hidden': 290, 'gru_layers': 1, 'bidirectional': False, 'dropout': 0.14546564284756763, 'pool_size': 8, 'lr': 0.0013348675747970916}. Best is trial 3 with value: 1688476.0818661973.
+
+Metrics:
+MAE sklearn (lower is better):  600.4282836914062
+Normalized MAE (lower is better):  0.19419406
+MAPE sklearn (lower is better):  1.812371917106053e+17 %
+MSE (lower is better):  1172893.625
+RMSE (lower is better):  1083.0021352702865
+NRMSE (lower is better):  0.35027093
+R2 (higher is better):  0.9384832978248596
+
+====================  Starting training for production sites  ====================
+--------------------  Sites for site_id 1: ['aieg_CHAMAIEG_217158317/production', 'aieg_CHAMAIEG_217158406/production', 'aieg_CHAMAIEG_219792511/consumption', 'aieg_CHAMAIEG_219792511/production', 'aieg_CHAMAIEG_250692408/production']  --------------------
+
+Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]
+Creating temporal split:   0%|          | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/old_code/AIEG_training.py", line 679, in <module>
+    main_cnn_gru({site_id : sites}, {site_id: drop_period[site_id]}, f'cnn_gru_{etype}', True)
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/old_code/AIEG_training.py", line 470, in main_cnn_gru
+    train_sites, val_sites, test_sites = temporal_split(
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/src/data/preprocessing.py", line 300, in temporal_split
+    train, val, test = create_split(
+  File "/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/src/data/preprocessing.py", line 194, in create_split
+    df = concat_production_sites(
+TypeError: concat_production_sites() got an unexpected keyword argument 'info'
+/home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/AIEG_venv_linux/lib/python3.10/site-packages/tables/file.py:114: UnclosedFileWarning: Closing remaining open file: /home/iridia-tower/Bureau/bripetit_phd/aieg/data/processed/aieg.h5
+  warnings.warn(UnclosedFileWarning(msg))

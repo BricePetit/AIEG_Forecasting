@@ -1,0 +1,13 @@
+paths:
+  base_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting
+
+  data_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/data
+  raw_data_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/data/raw
+  processed_data_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/data/processed
+
+  models_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/models
+  saved_models_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/saved_models
+
+  predictions_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/predictions
+  plots_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/plots
+  logs_dir: /home/iridia-tower/Bureau/bripetit_phd/aieg/AIEG_Forecasting/logs

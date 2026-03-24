@@ -1,0 +1,107 @@
+Pour la prédiction du prochain point (prochaine 15 minutes) voici les baselines (via naive forecast donc datashift de 1) :
+Production:
+site 1 :
+MAE sklearn (lower is better):  12652.116869428419
+Normalized MAE (lower is better):  0.19964823081293387
+MAPE sklearn (lower is better):  2.773306630540075e+16 %
+MSE (lower is better):  990131069.1954131
+RMSE (lower is better):  31466.34820241162
+NRMSE (lower is better):  0.49653356932981213
+R2 (higher is better):  0.9165955914966065
+site 2:
+MAE sklearn (lower is better):  2826.2677801929603
+Normalized MAE (lower is better):  0.19923598965566305
+MAPE sklearn (lower is better):  3935991162722687.0 %
+MSE (lower is better):  42658794.93940434
+RMSE (lower is better):  6531.370066027826
+NRMSE (lower is better):  0.46042487128504983
+R2 (higher is better):  0.9146880153131905
+site 3:
+MAE sklearn (lower is better):  2494.198565737052
+Normalized MAE (lower is better):  0.19578862840534522
+MAPE sklearn (lower is better):  5246902896546599.0 %
+MSE (lower is better):  35460125.71027888
+RMSE (lower is better):  5954.840527695002
+NRMSE (lower is better):  0.467440754439468
+R2 (higher is better):  0.9243719159223128
+site 4:
+MAE sklearn (lower is better):  4053.158780939552
+Normalized MAE (lower is better):  0.19834421127769172
+MAPE sklearn (lower is better):  1.2274501762648666e+16 %
+MSE (lower is better):  95696921.07537745
+RMSE (lower is better):  9782.480313058517
+NRMSE (lower is better):  0.47871264041211903
+R2 (higher is better):  0.9151603219236621
+site 5:
+MAE sklearn (lower is better):  471.6823581729242
+Normalized MAE (lower is better):  0.25019630535495935
+MAPE sklearn (lower is better):  1.9445788442506224e+16 %
+MSE (lower is better):  1851998.045359253
+RMSE (lower is better):  1360.881348743987
+NRMSE (lower is better):  0.7218575797515685
+R2 (higher is better):  0.8970014913383768
+site 6:
+MAE sklearn (lower is better):  2531.5389285751103
+Normalized MAE (lower is better):  0.20071010891332644
+MAPE sklearn (lower is better):  4639990272660030.0 %
+MSE (lower is better):  35126362.996317685
+RMSE (lower is better):  5926.749783508469
+NRMSE (lower is better):  0.4698954383528156
+R2 (higher is better):  0.9144300843861555
+Consommation:
+site 1:
+MAE sklearn (lower is better):  1709.7664538334755
+Normalized MAE (lower is better):  0.04275746840828203
+MAPE sklearn (lower is better):  1.9895762952193193e+18 %
+MSE (lower is better):  91953034.63002385
+RMSE (lower is better):  9589.214494942944
+NRMSE (lower is better):  0.23980499495031998
+R2 (higher is better):  0.9438512671252937
+site 2:
+MAE sklearn (lower is better):  383.94586146246417
+Normalized MAE (lower is better):  0.04275746840828205
+MAPE sklearn (lower is better):  4.4678007508017184e+17 %
+MSE (lower is better):  4636950.54647956
+RMSE (lower is better):  2153.357969887859
+NRMSE (lower is better):  0.23980499495032004
+R2 (higher is better):  0.9438512671252937
+siite 3:
+MAE sklearn (lower is better):  291.5521357709341
+Normalized MAE (lower is better):  0.042757468408282054
+MAPE sklearn (lower is better):  3.3926576161899066e+17 %
+MSE (lower is better):  2673775.4853407247
+RMSE (lower is better):  1635.1683354751965
+NRMSE (lower is better):  0.23980499495031998
+R2 (higher is better):  0.9438512671252937
+site 4:
+MAE sklearn (lower is better):  1157.3187623856618
+Normalized MAE (lower is better):  0.07568022343427494
+MAPE sklearn (lower is better):  1.0195499163185252e+18 %
+MSE (lower is better):  31090138.983730774
+RMSE (lower is better):  5575.85320679542
+NRMSE (lower is better):  0.36462021548595247
+R2 (higher is better):  0.9155872811375817
+site 5:
+MAE sklearn (lower is better):  388.75016736240974
+Normalized MAE (lower is better):  0.04275746840828205
+MAPE sklearn (lower is better):  4.5237062407713146e+17 %
+MSE (lower is better):  4753720.690267636
+RMSE (lower is better):  2180.302889570079
+NRMSE (lower is better):  0.23980499495031998
+R2 (higher is better):  0.9438512671252937
+site 6:
+MAE sklearn (lower is better):  9576.723785890572
+Normalized MAE (lower is better):  0.10072548355019272
+MAPE sklearn (lower is better):  5.812728359630455e+17 %
+MSE (lower is better):  314267500.0001618
+RMSE (lower is better):  17727.59148898016
+NRMSE (lower is better):  0.18645418462820965
+R2 (higher is better):  0.9599734803215844
+site 7:
+MAE sklearn (lower is better):  477.0102244992194
+Normalized MAE (lower is better):  0.09995443662795661
+MAPE sklearn (lower is better):  3.119336154754856e+16 %
+MSE (lower is better):  1141580.8614965149
+RMSE (lower is better):  1068.4478749553086
+NRMSE (lower is better):  0.22388640729790074
+R2 (higher is better):  0.948860675111494

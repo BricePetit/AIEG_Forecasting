@@ -19,16 +19,15 @@ __license__: str = "MIT"
 
 # Imports standard libraries
 from abc import ABC, abstractmethod
-from typing import Tuple, Union
+from typing import Tuple
 
 # Imports third party libraries
-import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
 # Imports from src
-from preprocessing import add_ts_features, add_stats_features, get_weather_data
-from utils import concat_production_sites
+from data import get_weather_data, build_group_data
+from features import add_ts_features, add_stats_features
 
 # ----------------------------------------------------------------------------------------------- #
 # ------------------------------------------- CLASSES ------------------------------------------- #
@@ -77,7 +76,7 @@ class BaseDataGenerator(ABC):
         self.is_ts_features = is_ts_features
         self.is_stats_features = is_stats_features
         self.lag = lag
-        self.previous_days = previous_days
+        self.previous_days = previous_days * 96
         self.step = step
         self.specific_features = specific_features
         self.weather = get_weather_data()
@@ -85,6 +84,9 @@ class BaseDataGenerator(ABC):
         self.ts_features = []
         self.stats_features = []
         self.data, self.indices = self.init_data_and_indices(sites, period2drop)
+        self.x_now = self.data[self.ts_features + self.weather_features].to_numpy(dtype='float32')
+        self.x_past = self.data[['ap'] + self.stats_features].to_numpy(dtype='float32')
+        self.y = self.data['ap'].to_numpy(dtype='float32')
 
     @abstractmethod
     def __len__(self) -> int:
@@ -121,14 +123,13 @@ class BaseDataGenerator(ABC):
         indices = []
         df_list = []
         start_idx = 0
-        previous_days = self.previous_days * 96
-        min_required_len = self.seq_length + self.out_length + self.lag + previous_days
+        min_required_len = self.seq_length + self.out_length + self.lag + self.previous_days
         # For each site.
         for site in tqdm(sites, desc='Initialization of the data and indices'):
             # Load the data.
             if 'CHAMAIEG' in site or 'DEPOTVIR' in site:
                 sites_list = site.split('*')
-                tmp_df = concat_production_sites(self.dataset, sites_list, info=False)
+                tmp_df = build_group_data(self.dataset, sites_list)
             else:
                 tmp_df = pd.DataFrame(self.dataset[site]).set_index('ts')[['ap']]
                 tmp_df.index = pd.to_datetime(tmp_df.index)
@@ -168,9 +169,26 @@ class BaseDataGenerator(ABC):
                     set(tmp_df.columns) - {'ap'} - set(self.weather_features)
                     - set(self.ts_features)
                 )
+            feature_df = tmp_df.drop(columns=['ap', 'site_id'], errors='ignore')
+            feature_df = feature_df.select_dtypes(include='number')
+            # Remove features with only one unique value or with less than 3 non-null values.
+            valid_cols = feature_df.columns[
+                (feature_df.nunique(dropna=True) > 1) &
+                (feature_df.notna().sum() > 2)
+            ]
+            target = tmp_df['ap']
+            if target.nunique(dropna=True) <= 1 or len(valid_cols) == 0:
+                corr = pd.Series(dtype='float64')
+            else:
+                corr = feature_df[valid_cols].corrwith(target).abs().dropna()
+            selected = corr.sort_values(ascending=False).head(20).index.tolist()
+            self.specific_features = selected
             # Select the specific features if needed.
             if self.specific_features is not None:
-                tmp_df = tmp_df[self.specific_features]
+                tmp_df = tmp_df[['ap'] + self.specific_features]
+                self.ts_features = list(set(self.specific_features) - set(self.weather_features) - set(self.stats_features))
+                self.stats_features = list(set(self.specific_features) - set(self.weather_features) - set(self.ts_features))
+                self.weather_features = list(set(self.specific_features) - set(self.ts_features) - set(self.stats_features))
             # Append the dataframe to the list.
             tmp_df = tmp_df.dropna()
             df_list.append(tmp_df)
@@ -178,7 +196,7 @@ class BaseDataGenerator(ABC):
             df_size = len(tmp_df)
             if df_size >= min_required_len:
                 n_windows = (df_size - min_required_len) // self.step + 1
-                first_idx = start_idx + previous_days
+                first_idx = start_idx + self.previous_days
                 starts = range(first_idx, first_idx + n_windows * self.step, self.step)
                 indices.extend(starts)
             start_idx += df_size

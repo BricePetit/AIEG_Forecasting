@@ -51,22 +51,18 @@ class PyTorchDataGenerator(
 
         :return:    Return the batch of data.
         """
-        previous_days = self.previous_days * 96
         # Get the idx.
         idx = self.indices[index]
-        # Get the current X data for ts and weather features.
-        x_now = self.data[
-            self.ts_features + self.weather_features
-        ].iloc[idx : idx + self.seq_length].to_numpy()
-        # Get the past X data for ap and stats features.
-        x_past = self.data[
-            ['ap'] + self.stats_features
-        ].iloc[idx - previous_days : idx - previous_days + self.seq_length].to_numpy()
         # Concatenate past and current windows.
-        windows_x = np.concatenate((x_past, x_now), axis=1).astype('float32')
+        windows_x = np.concatenate(
+            (
+                self.x_past[idx - self.previous_days:idx - self.previous_days + self.seq_length],
+                self.x_now[idx:idx + self.seq_length])
+        , axis=1
+        ).astype('float32')
         # Compute the start and stop indices for the target variable.
         y_start = idx + self.seq_length + self.lag
         y_stop  = y_start + self.out_length
         # Get the target variable.
-        windows_y = self.data.iloc[y_start:y_stop]['ap'].to_numpy(dtype='float32')
+        windows_y = self.y[y_start:y_stop]
         return torch.from_numpy(windows_x), torch.from_numpy(windows_y)

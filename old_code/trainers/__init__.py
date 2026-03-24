@@ -1,8 +1,8 @@
 """
-Init file for data_generator module.
+Init file for trainers module.
 """
 
-__title__: str = "data_generator"
+__title__: str = "trainers"
 __version__: str = "1.0.0"
 __author__: str = "Brice Petit"
 __license__: str = "MIT"
@@ -16,22 +16,10 @@ __license__: str = "MIT"
 # Imports third party libraries
 
 # Imports from src
-
-from .pytorch_generators import (
-    PyTorchDataGenerator,
-)
-
-from .tf_generators import (
-    TFDataGeneratorInMem,
-
-)
-
-from .sklearn_generators import (
-    SkLearnDataGenerator,
-)
+from .tf_trainer import TFTrainer
+from .pytorch_trainer import PyTorchTrainer
 
 __all__ = [
-    "PyTorchDataGenerator",
-    "TFDataGeneratorInMem",
-    "SkLearnDataGenerator",
+    "TFTrainer",
+    "PyTorchTrainer",
 ]

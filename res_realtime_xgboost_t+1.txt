@@ -1,0 +1,171 @@
+====================  Starting training for consumption sites  ====================
+--------------------  Sites for site_id 1: ['aieg_EP_AND_0/consumption']  --------------------
+['ap-0', 'diff_1-0', 'season-0', 'month_cos-0', 'hour_cos-5', 'sun_int_avg-3', 'hour_sin-6', 'sun_int_avg-7', 'short_wave_from_sky_avg-7', 'temp_soil_avg_50cm-3', 'hour_sin-0', 'rolling_mean-1', 'short_wave_from_sky_avg-3', 'hour_cos-0', 'day-4', 'ewm_mean-3', 'weekofyear-0', 'hour_cos-1', 'hour_sin-7', 'hour-2', 'short_wave_from_sky_avg-4', 'season_cos-0', 'ewm_mean-4', 'month-0', 'temp_soil_avg_5cm-0', 'temp_soil_avg_5cm-3', 'ewm_mean-6', 'rolling_std-0', 'sun_int_avg-4', 'temp_soil_avg_50cm-4', 'temp_soil_avg_50cm-1', 'day-0', 'hour_sin-1', 'sun_duration-2', 'ewm_mean-7', 'sun_int_avg-6', 'ewm_mean-2', 'sun_int_avg-5', 'short_wave_from_sky_avg-2', 'temp_soil_avg_5cm-5', 'dayofweek-0', 'short_wave_from_sky_avg-5', 'hour-0', 'dayofweek_sin-1', 'hour_sin-3', 'sun_duration-1', 'pressure-3', 'temp_dry_shelter_avg-5', 'day-1', 'hour-1']
+{'max_depth': 9, 'learning_rate': 0.010385966623617834, 'subsample': 0.9121098394971963, 'colsample_bytree': 0.8456873914380081, 'reg_alpha': 0.23557376508210065, 'reg_lambda': 0.8298741668298046}
+
+Metrics:
+MAE sklearn (lower is better):  1421.3146734127179
+Normalized MAE (lower is better):  0.026987632810916744
+MAPE sklearn (lower is better):  1.3607606442526346e+18 %
+MSE (lower is better):  35848921.60896059
+RMSE (lower is better):  5987.396897564132
+NRMSE (lower is better):  0.11368746976818274
+R2 (higher is better):  0.9761130911224967
+
+--------------------  Sites for site_id 2: ['aieg_EP_RUM_0/consumption']  --------------------
+['ap-0', 'diff_1-0', 'season-0', 'month_cos-0', 'sun_int_avg-3', 'hour_cos-5', 'rolling_mean-1', 'hour_cos-0', 'hour_sin-6', 'sun_int_avg-7', 'short_wave_from_sky_avg-7', 'hour_sin-0', 'temp_soil_avg_50cm-3', 'hour_sin-7', 'short_wave_from_sky_avg-3', 'hour-2', 'hour_cos-1', 'weekofyear-0', 'short_wave_from_sky_avg-4', 'month-0', 'ewm_mean-3', 'ewm_mean-4', 'temp_soil_avg_50cm-4', 'hour_sin-1', 'temp_soil_avg_5cm-0', 'temp_soil_avg_5cm-3', 'sun_int_avg-4', 'day-0', 'sun_int_avg-5', 'ewm_mean-5', 'sun_int_avg-6', 'hour-0', 'rolling_std-0', 'rolling_std-5', 'hour_cos-7', 'ewm_mean-7', 'short_wave_from_sky_avg-2', 'ewm_mean-2', 'short_wave_from_sky_avg-5', 'temp_soil_avg_5cm-5', 'rolling_std-2', 'temp_soil_avg_50cm-1', 'hour_cos-6', 'hour-1', 'month_sin-0', 'hour_sin-3', 'sun_duration-2', 'temp_soil_avg-1', 'sun_duration-3', 'hour_sin-2']
+{'max_depth': 10, 'learning_rate': 0.0984850906019461, 'subsample': 0.9642141188612157, 'colsample_bytree': 0.8960798239326433, 'reg_alpha': 0.9977367727593025, 'reg_lambda': 3.1747448830385596}
+
+Metrics:
+MAE sklearn (lower is better):  293.1664131645673
+Normalized MAE (lower is better):  0.024788803657266045
+MAPE sklearn (lower is better):  2.403255875355789e+17 %
+MSE (lower is better):  1896370.1662012157
+RMSE (lower is better):  1377.087566642447
+NRMSE (lower is better):  0.11644019156177908
+R2 (higher is better):  0.9749423364595141
+
+--------------------  Sites for site_id 3: ['aieg_EP_OHE_0/consumption']  --------------------
+['ap-0', 'diff_1-0', 'season-0', 'month_cos-0', 'rolling_mean-1', 'sun_int_avg-3', 'hour_cos-0', 'sun_int_avg-7', 'hour_cos-5', 'short_wave_from_sky_avg-7', 'ewm_mean-7', 'hour_sin-6', 'hour_sin-0', 'short_wave_from_sky_avg-3', 'hour_sin-7', 'hour-2', 'temp_soil_avg_50cm-3', 'weekofyear-0', 'short_wave_from_sky_avg-4', 'hour_cos-1', 'ewm_mean-3', 'temp_soil_avg_50cm-4', 'month-0', 'temp_soil_avg_5cm-3', 'temp_soil_avg_5cm-0', 'diff_2-3', 'is_peak_hour-4', 'sun_int_avg-4', 'sun_int_avg-6', 'hour_sin-1', 'ewm_mean-2', 'month_sin-0', 'rolling_std-0', 'short_wave_from_sky_avg-2', 'day-0', 'hour-1', 'rolling_std-5', 'sun_int_avg-5', 'ewm_mean-6', 'short_wave_from_sky_avg-6', 'hour-3', 'hour-0', 'temp_soil_avg-1', 'short_wave_from_sky_avg-5', 'temp_soil_avg_50cm-1', 'hour_sin-3', 'dayofweek-0', 'sun_int_avg-2', 'sun_duration-2', 'pressure-4']
+{'max_depth': 10, 'learning_rate': 0.03861571547743521, 'subsample': 0.9940188616130935, 'colsample_bytree': 0.8973347556304989, 'reg_alpha': 0.8902758333208491, 'reg_lambda': 0.7657379063801601}
+
+Metrics:
+MAE sklearn (lower is better):  227.07082654952862
+Normalized MAE (lower is better):  0.025284621591692976
+MAPE sklearn (lower is better):  1.7729951412386877e+17 %
+MSE (lower is better):  1210351.8862954383
+RMSE (lower is better):  1100.1599366889518
+NRMSE (lower is better):  0.12250419004597926
+R2 (higher is better):  0.9722644592551613
+
+--------------------  Sites for site_id 4: ['aieg_EP_VIR_0/consumption']  --------------------
+['ap-0', 'diff_1-0', 'diff_2-0', 'year-0', 'hour_cos-1', 'weekofyear-1', 'hour_sin-0', 'short_wave_from_sky_avg-4', 'hour_cos-0', 'season_cos-0', 'hour-0', 'hour-1', 'temp_soil_avg_50cm-3', 'hour_sin-6', 'temp_soil_avg_5cm-5', 'sun_int_avg-7', 'season-0', 'month_cos-0', 'dayofweek-1', 'sun_int_avg-3', 'day-4', 'sun_duration-7', 'weekofyear-0', 'sun_int_avg-2', 'short_wave_from_sky_avg-3', 'ewm_mean-3', 'is_peak_hour-6', 'hour_sin-2', 'sun_int_avg-6', 'hour-3', 'ewm_mean-7', 'hour_sin-7', 'short_wave_from_sky_avg-2', 'rolling_mean-4', 'hour_sin-3', 'rolling_std-6', 'month-3', 'hour_cos-2', 'short_wave_from_sky_avg-5', 'ewm_mean-6', 'pressure-4', 'sun_int_avg-4', 'sun_int_avg-0', 'hour_cos-6', 'pressure-3', 'month-0', 'temp_soil_avg_5cm-3', 'temp_soil_avg_20cm-4', 'temp_soil_avg-7', 'ewm_mean-2']
+{'max_depth': 9, 'learning_rate': 0.06964640689261245, 'subsample': 0.7992369085086554, 'colsample_bytree': 0.8834855786523282, 'reg_alpha': 0.6221807197216322, 'reg_lambda': 0.6392130863504811}
+
+Metrics:
+MAE sklearn (lower is better):  478.94628547096744
+Normalized MAE (lower is better):  0.018934767022188288
+MAPE sklearn (lower is better):  2.447314952937253e+17 %
+MSE (lower is better):  6243466.705880245
+RMSE (lower is better):  2498.692999526001
+NRMSE (lower is better):  0.09878387460396247
+R2 (higher is better):  0.9828613112302518
+
+--------------------  Sites for site_id 5: ['aieg_EP_GVE_0/consumption']  --------------------
+['ap-0', 'diff_1-0', 'season-0', 'month_cos-0', 'rolling_mean-1', 'sun_int_avg-3', 'sun_int_avg-7', 'hour_cos-5', 'hour_sin-6', 'hour_sin-0', 'hour_cos-0', 'short_wave_from_sky_avg-7', 'hour_sin-7', 'short_wave_from_sky_avg-3', 'hour_cos-1', 'hour-2', 'temp_soil_avg_50cm-3', 'weekofyear-0', 'short_wave_from_sky_avg-4', 'temp_soil_avg_50cm-4', 'ewm_mean-3', 'month-0', 'ewm_mean-4', 'sun_int_avg-4', 'temp_soil_avg_5cm-0', 'sun_int_avg-6', 'temp_soil_avg_5cm-3', 'temp_soil_avg_5cm-5', 'sun_int_avg-5', 'ewm_mean-2', 'ewm_mean-7', 'day-0', 'rolling_std-0', 'sun_duration-2', 'short_wave_from_sky_avg-5', 'hour_sin-1', 'ewm_mean-5', 'short_wave_from_sky_avg-2', 'hour-1', 'temp_soil_avg_5cm-6', 'hour-5', 'temp_soil_avg_50cm-1', 'month_sin-0', 'hour_sin-5', 'hour_cos-7', 'rolling_std-5', 'hour-0', 'short_wave_from_sky_avg-0', 'hour_sin-3', 'hour_sin-2']
+{'max_depth': 10, 'learning_rate': 0.010184308394074084, 'subsample': 0.956496572810438, 'colsample_bytree': 0.7702092451961842, 'reg_alpha': 0.003460378205027375, 'reg_lambda': 0.6458403701523608}
+
+Metrics:
+MAE sklearn (lower is better):  328.06375434569935
+Normalized MAE (lower is better):  0.027396747455876773
+MAPE sklearn (lower is better):  2.9894891222405146e+17 %
+MSE (lower is better):  1876151.1253090089
+RMSE (lower is better):  1369.7266608009822
+NRMSE (lower is better):  0.11438647187461791
+R2 (higher is better):  0.9758184530235481
+
+--------------------  Sites for site_id 6: ['aieg_AIEGMAR_0/production']  --------------------
+['ap-0', 'hour_sin-4', 'is_peak_hour-1', 'hour_sin-3', 'hour_sin-5', 'month-2', 'month_cos-0', 'is_peak_hour-0', 'temp_soil_avg_20cm-3', 'hour-3', 'hour-2', 'temp_soil_avg_5cm-1', 'hour-1', 'is_peak_hour-3', 'hour_sin-2', 'dayofweek-0', 'season-0', 'rolling_max-6', 'temp_soil_avg_50cm-6', 'short_wave_from_sky_avg-1', 'rolling_max-0', 'is_peak_hour-4', 'short_wave_from_sky_avg-5', 'rolling_median-2', 'month-1', 'short_wave_from_sky_avg-6', 'ap-1', 'is_peak_hour-6', 'season_sin-0', 'temp_soil_avg-0', 'rolling_min-0', 'temp_soil_avg-5', 'hour_sin-0', 'dayofweek-6', 'dayofweek_cos-6', 'short_wave_from_sky_avg-2', 'diff_1-0', 'month-0', 'ewm_mean-7', 'hour_cos-6', 'hour_sin-7', 'temp_grass_pt100_avg-7', 'hour_cos-5', 'sun_duration-6', 'short_wave_from_sky_avg-7', 'temp_soil_avg_5cm-5', 'temp_grass_pt100_avg-4', 'temp_grass_pt100_avg-5', 'sun_duration-5', 'weekofyear-0']
+{'max_depth': 4, 'learning_rate': 0.08093418520692468, 'subsample': 0.8169111402215141, 'colsample_bytree': 0.9067652905816427, 'reg_alpha': 0.8755662226961031, 'reg_lambda': 2.1808816783703535}
+
+Metrics:
+MAE sklearn (lower is better):  3826.3418464487017
+Normalized MAE (lower is better):  0.1635254794783816
+MAPE sklearn (lower is better):  1.5794338598510781e+18 %
+MSE (lower is better):  36328470.042475365
+RMSE (lower is better):  6027.310348942998
+NRMSE (lower is better):  0.25758775727022043
+R2 (higher is better):  0.9324386259157199
+
+--------------------  Sites for site_id 7: ['aieg_FABLANTO_213310817/consumption']  --------------------
+['ap-0', 'is_peak_hour-4', 'temp_soil_avg_5cm-0', 'temp_soil_avg_20cm-3', 'is_peak_hour-2', 'temp_soil_avg_5cm-4', 'ewm_mean-0', 'temp_soil_avg_20cm-4', 'is_peak_hour-3', 'rolling_min-0', 'temp_soil_avg_50cm-2', 'rolling_median-1', 'rolling_max-0', 'temp_soil_avg_5cm-7', 'temp_soil_avg-6', 'pressure-5', 'hour-0', 'hour-3', 'temp_grass_pt100_avg-7', 'hour-1', 'is_peak_hour-6', 'temp_soil_avg_50cm-7', 'hour_cos-7', 'temp_soil_avg_50cm-4', 'temp_soil_avg_50cm-1', 'rolling_mean-0', 'hour-7', 'hour_cos-6', 'temp_soil_avg_20cm-5', 'weekofyear-7', 'ap-2', 'is_peak_hour-0', 'temp_soil_avg-1', 'temp_soil_avg_10cm-3', 'rolling_median-2', 'temp_soil_avg_50cm-6', 'year-0', 'rolling_max-6', 'rolling_min-4', 'rolling_mean-2', 'year-6', 'rolling_min-5', 'rolling_mean-4', 'hour_cos-1', 'temp_soil_avg_10cm-1', 'temp_soil_avg_5cm-3', 'rolling_min-6', 'rolling_mean-6', 'temp_dry_shelter_avg-5', 'hour_cos-2']
+{'max_depth': 5, 'learning_rate': 0.09141730261139565, 'subsample': 0.8617907621335952, 'colsample_bytree': 0.9164352729699003, 'reg_alpha': 0.5890269755327847, 'reg_lambda': 3.429081752359987}
+
+Metrics:
+MAE sklearn (lower is better):  374.3273351273353
+Normalized MAE (lower is better):  0.12074009982941336
+MAPE sklearn (lower is better):  2.232773263962083e+17 %
+MSE (lower is better):  532338.404992152
+RMSE (lower is better):  729.6152444899654
+NRMSE (lower is better):  0.2353389912783508
+R2 (higher is better):  0.9721979339576018
+
+====================  Starting training for production sites  ====================
+--------------------  Sites for site_id 1: ['aieg_CHAMAIEG_217158317/production', 'aieg_CHAMAIEG_217158406/production', 'aieg_CHAMAIEG_219792511/consumption', 'aieg_CHAMAIEG_219792511/production', 'aieg_CHAMAIEG_250692408/production']  --------------------
+['ap-0', 'hour-1', 'short_wave_from_sky_avg-5', 'sun_duration-1', 'sun_duration-0', 'short_wave_from_sky_avg-7', 'short_wave_from_sky_avg-4', 'hour_cos-2', 'hour-3', 'hour-0', 'short_wave_from_sky_avg-1', 'temp_grass_pt100_avg-5', 'hour-2', 'temp_grass_pt100_avg-4', 'short_wave_from_sky_avg-0', 'rolling_max-1', 'hour_cos-4', 'rolling_median-0', 'hour_cos-0', 'temp_dry_shelter_avg-1', 'diff_2-1', 'short_wave_from_sky_avg-3', 'humidity_rel_shelter_avg-1', 'ap-3', 'short_wave_from_sky_avg-2', 'rolling_mean-2', 'short_wave_from_sky_avg-6', 'rolling_min-7', 'sun_duration-7', 'rolling_max-3', 'pressure-3', 'sun_int_avg-3', 'temp_dry_shelter_avg-7', 'temp_soil_avg_5cm-1', 'diff_1-7', 'humidity_rel_shelter_avg-2', 'rolling_median-3', 'sun_duration-5', 'rolling_max-7', 'ap-2', 'wind_gusts_speed-0', 'temp_grass_pt100_avg-3', 'temp_soil_avg_50cm-7', 'rolling_max-0', 'temp_soil_avg-1', 'diff_2-0', 'hour_cos-1', 'temp_grass_pt100_avg-2', 'ewm_mean-2', 'diff_1-6']
+{'max_depth': 9, 'learning_rate': 0.0327148652237389, 'subsample': 0.6957611509524712, 'colsample_bytree': 0.9459841679119942, 'reg_alpha': 0.6382939089779562, 'reg_lambda': 2.685465850508295}
+
+Metrics:
+MAE sklearn (lower is better):  9928.408421436288
+Normalized MAE (lower is better):  0.25587429212814994
+MAPE sklearn (lower is better):  5.33580804659493e+18 %
+MSE (lower is better):  374278296.80026597
+RMSE (lower is better):  19346.273460288572
+NRMSE (lower is better):  0.4985908936099983
+R2 (higher is better):  0.9233471872212128
+
+--------------------  Sites for site_id 2: ['aieg_CHAAIEG2_250692408/consumption']  --------------------
+['ap-0', 'short_wave_from_sky_avg-1', 'hour-3', 'year-0', 'hour-0', 'short_wave_from_sky_avg-4', 'hour-1', 'short_wave_from_sky_avg-2', 'short_wave_from_sky_avg-0', 'precip_quantity-2', 'hour-2', 'hour_cos-0', 'short_wave_from_sky_avg-6', 'short_wave_from_sky_avg-7', 'temp_soil_avg-6', 'sun_duration-6', 'ap-1', 'temp_dry_shelter_avg-5', 'short_wave_from_sky_avg-5', 'rolling_max-1', 'ap-2', 'ewm_mean-3', 'temp_grass_pt100_avg-7', 'sun_duration-7', 'temp_soil_avg_50cm-4', 'humidity_rel_shelter_avg-4', 'rolling_max-0', 'rolling_median-3', 'sun_duration-3', 'temp_soil_avg_10cm-3', 'precip_quantity-3', 'humidity_rel_shelter_avg-3', 'rolling_median-4', 'short_wave_from_sky_avg-3', 'hour_cos-6', 'rolling_std-5', 'rolling_mean-2', 'ewm_mean-0', 'temp_soil_avg-0', 'sun_duration-5', 'temp_soil_avg_50cm-6', 'rolling_min-4', 'rolling_std-6', 'sun_int_avg-6', 'rolling_min-2', 'rolling_mean-0', 'rolling_max-5', 'rolling_min-7', 'temp_soil_avg_50cm-3', 'pressure-2']
+{'max_depth': 7, 'learning_rate': 0.011887058295990419, 'subsample': 0.6119089150757979, 'colsample_bytree': 0.7692473670464074, 'reg_alpha': 0.875333808833979, 'reg_lambda': 3.111175992966092}
+
+Metrics:
+MAE sklearn (lower is better):  3240.5578722222263
+Normalized MAE (lower is better):  0.14709706977931686
+MAPE sklearn (lower is better):  4.7702094172627245e+17 %
+MSE (lower is better):  43087995.8613711
+RMSE (lower is better):  6564.144716668814
+NRMSE (lower is better):  0.2979630333733942
+R2 (higher is better):  0.9420545597520374
+
+--------------------  Sites for site_id 3: ['aieg_SPORAIEG_217158317/consumption']  --------------------
+['ap-0', 'hour-2', 'sun_duration-7', 'short_wave_from_sky_avg-1', 'precip_quantity-5', 'hour-1', 'hour-0', 'short_wave_from_sky_avg-3', 'short_wave_from_sky_avg-0', 'rolling_max-0', 'humidity_rel_shelter_avg-1', 'short_wave_from_sky_avg-4', 'precip_quantity-0', 'temp_soil_avg_20cm-4', 'ap-2', 'short_wave_from_sky_avg-6', 'short_wave_from_sky_avg-2', 'temp_soil_avg_20cm-3', 'rolling_mean-0', 'hour_cos-2', 'season_sin-0', 'sun_int_avg-5', 'ap-1', 'sun_duration-6', 'temp_soil_avg_5cm-1', 'hour_cos-0', 'temp_soil_avg_10cm-3', 'wind_gusts_speed-0', 'hour_cos-5', 'temp_dry_shelter_avg-6', 'short_wave_from_sky_avg-7', 'sun_int_avg-7', 'rolling_median-4', 'sun_int_avg-6', 'rolling_max-1', 'temp_soil_avg_50cm-5', 'rolling_std-7', 'rolling_median-2', 'diff_1-3', 'short_wave_from_sky_avg-5', 'sun_duration-3', 'ewm_mean-2', 'pressure-6', 'ewm_mean-7', 'pressure-5', 'hour-3', 'diff_2-4', 'ewm_mean-6', 'humidity_rel_shelter_avg-3', 'rolling_min-5']
+{'max_depth': 4, 'learning_rate': 0.03486923725078751, 'subsample': 0.7409967683714869, 'colsample_bytree': 0.9514185647435535, 'reg_alpha': 0.6330907791376041, 'reg_lambda': 3.5842390138274256}
+
+Metrics:
+MAE sklearn (lower is better):  1488.000983445016
+Normalized MAE (lower is better):  0.10934359656859892
+MAPE sklearn (lower is better):  3.005386971153941e+17 %
+MSE (lower is better):  14797931.204746526
+RMSE (lower is better):  3846.8079240776406
+NRMSE (lower is better):  0.28267710734532436
+R2 (higher is better):  0.9744065019422774
+
+--------------------  Sites for site_id 4: ['aieg_AIEGINPV_250692460/consumption']  --------------------
+['ap-0', 'short_wave_from_sky_avg-4', 'short_wave_from_sky_avg-7', 'ewm_mean-0', 'short_wave_from_sky_avg-6', 'short_wave_from_sky_avg-5', 'short_wave_from_sky_avg-0', 'month_cos-0', 'temp_soil_avg_20cm-1', 'hour-3', 'short_wave_from_sky_avg-2', 'rolling_mean-0', 'temp_soil_avg_20cm-4', 'short_wave_from_sky_avg-1', 'rolling_mean-1', 'ewm_mean-6', 'short_wave_from_sky_avg-3', 'temp_soil_avg_5cm-4', 'ewm_mean-1', 'ap-2', 'rolling_min-1', 'month-0', 'precip_quantity-1', 'precip_quantity-5', 'year-0', 'temp_soil_avg_50cm-7', 'rolling_max-1', 'precip_quantity-7', 'hour_cos-2', 'temp_grass_pt100_avg-7', 'rolling_max-0', 'rolling_mean-6', 'precip_quantity-0', 'rolling_median-5', 'temp_soil_avg-2', 'hour-1', 'rolling_max-3', 'rolling_median-0', 'temp_soil_avg_20cm-7', 'temp_grass_pt100_avg-6', 'sun_duration-5', 'ewm_mean-3', 'rolling_std-2', 'temp_soil_avg_20cm-0', 'humidity_rel_shelter_avg-1', 'humidity_rel_shelter_avg-3', 'temp_soil_avg_50cm-2', 'sun_int_avg-1', 'sun_duration-7', 'hour-0']
+{'max_depth': 10, 'learning_rate': 0.01081919586749678, 'subsample': 0.771031686993944, 'colsample_bytree': 0.8327623426872979, 'reg_alpha': 0.9046345870503245, 'reg_lambda': 1.7618060021836404}
+
+Metrics:
+MAE sklearn (lower is better):  4949.881815424203
+Normalized MAE (lower is better):  0.14782657833337925
+MAPE sklearn (lower is better):  7.327199956796392e+17 %
+MSE (lower is better):  104823064.77038513
+RMSE (lower is better):  10238.313570622124
+NRMSE (lower is better):  0.3057638383068274
+R2 (higher is better):  0.9411845078045937
+
+--------------------  Sites for site_id 5: ['aieg_FABLANTO_213310817/production']  --------------------
+['ap-0', 'temp_dry_shelter_avg-6', 'ewm_mean-1', 'short_wave_from_sky_avg-7', 'ap-2', 'short_wave_from_sky_avg-5', 'rolling_min-5', 'short_wave_from_sky_avg-0', 'month_cos-0', 'hour-3', 'rolling_min-0', 'temp_grass_pt100_avg-1', 'short_wave_from_sky_avg-3', 'temp_grass_pt100_avg-5', 'short_wave_from_sky_avg-2', 'short_wave_from_sky_avg-6', 'short_wave_from_sky_avg-4', 'ewm_mean-0', 'ewm_mean-2', 'temp_soil_avg_50cm-2', 'hour-1', 'hour-0', 'hour_cos-1', 'short_wave_from_sky_avg-1', 'rolling_max-0', 'rolling_median-2', 'hour_cos-0', 'temp_soil_avg_20cm-5', 'temp_soil_avg_50cm-1', 'temp_grass_pt100_avg-3', 'rolling_mean-1', 'rolling_mean-0', 'temp_grass_pt100_avg-6', 'pressure-4', 'temp_soil_avg_10cm-6', 'hour-2', 'rolling_median-0', 'temp_soil_avg-6', 'pressure-7', 'ewm_mean-6', 'sun_duration-4', 'precip_quantity-6', 'ewm_mean-3', 'humidity_rel_shelter_avg-5', 'temp_grass_pt100_avg-2', 'is_peak_hour-6', 'rolling_min-2', 'rolling_min-3', 'temp_soil_avg-4', 'diff_2-6']
+{'max_depth': 8, 'learning_rate': 0.03843714131290299, 'subsample': 0.7950416534830058, 'colsample_bytree': 0.7964942866599808, 'reg_alpha': 0.9982813238297021, 'reg_lambda': 3.179167167836791}
+
+Metrics:
+MAE sklearn (lower is better):  830.9519705640672
+Normalized MAE (lower is better):  0.18645080078605136
+MAPE sklearn (lower is better):  5.2296349471503176e+16 %
+MSE (lower is better):  3047202.3803585754
+RMSE (lower is better):  1745.623779729921
+NRMSE (lower is better):  0.39168684007197163
+R2 (higher is better):  0.9193786902430553
+
+--------------------  Sites for site_id 6: ['aieg_DEPOTVIR_212303594/production', 'aieg_DEPOTVIR_0/production']  --------------------
+['ap-0', 'short_wave_from_sky_avg-7', 'hour_cos-4', 'temp_grass_pt100_avg-7', 'hour_cos-2', 'hour_cos-3', 'rolling_min-6', 'short_wave_from_sky_avg-6', 'short_wave_from_sky_avg-4', 'hour_cos-5', 'temp_grass_pt100_avg-6', 'rolling_min-4', 'short_wave_from_sky_avg-2', 'short_wave_from_sky_avg-5', 'hour_cos-7', 'rolling_std-5', 'temp_grass_pt100_avg-1', 'temp_grass_pt100_avg-4', 'short_wave_from_sky_avg-0', 'hour-0', 'sun_int_avg-0', 'rolling_min-0', 'rolling_mean-5', 'rolling_max-0', 'temp_soil_avg_5cm-7', 'sun_duration-1', 'diff_1-1', 'sun_duration-7', 'temp_soil_avg_10cm-7', 'wind_speed_avg_30m-3', 'short_wave_from_sky_avg-3', 'temp_soil_avg-7', 'rolling_median-7', 'temp_soil_avg_50cm-5', 'rolling_max-2', 'diff_2-4', 'diff_1-7', 'rolling_std-1', 'diff_2-5', 'rolling_min-2', 'rolling_std-2', 'sun_duration-3', 'rolling_mean-7', 'temp_soil_avg_10cm-0', 'humidity_rel_shelter_avg-7', 'temp_grass_pt100_avg-5', 'rolling_median-0', 'wind_speed_10m-1', 'sun_int_avg-7', 'wind_speed_avg_30m-4']
+{'max_depth': 5, 'learning_rate': 0.09119427462056615, 'subsample': 0.6632340452568137, 'colsample_bytree': 0.8143659881623485, 'reg_alpha': 0.5834901834852121, 'reg_lambda': 1.0488545199914174}
+
+Metrics:
+MAE sklearn (lower is better):  1621.4419354725967
+Normalized MAE (lower is better):  0.1623499351924035
+MAPE sklearn (lower is better):  4.256463438616628e+16 %
+MSE (lower is better):  9079970.760835914
+RMSE (lower is better):  3013.298982981263
+NRMSE (lower is better):  0.30171225000404056
+R2 (higher is better):  0.9273262889912747
+

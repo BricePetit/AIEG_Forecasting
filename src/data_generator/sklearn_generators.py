@@ -82,7 +82,7 @@ class SkLearnDataGenerator(BaseDataGenerator):
         """
         # Get the idx
         idx = self.indices[index]
-        batch_indices = self.indices[index * self.batch_size:(index + 1) * self.batch_size]
+        # batch_indices = self.indices[index * self.batch_size:(index + 1) * self.batch_size]
         # Get the window
         x_stop = idx + self.seq_length
         # windows_x = np.array([self.data.iloc[idx:x_stop, [3, 4, 5]]], dtype='float32')

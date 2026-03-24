@@ -1,0 +1,14 @@
+model:
+  cnn_gru:
+    selected: false
+    batch_size: 64
+    num_workers: 16
+    patience: 10
+
+  xgboost:
+    selected: true
+    early_stopping_rounds: 20
+  
+  n_trials: 30
+
+  seed: 42
